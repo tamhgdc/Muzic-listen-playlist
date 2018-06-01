@@ -1,0 +1,17 @@
+{
+	"description": "Project Quan Khuya MP3",
+	"name": "hung-nguyen/project-quan-khuya-mp3",
+	"type": "project",
+	"license": "GPL-3.0",
+	"homepage": "https://mp3.nguyenanhung.com",
+	"authors": [
+		{
+			"name": "Nguyen An Hung",
+			"email": "dev@nguyenanhung.com"
+		}],
+	"require": {
+		"monolog/monolog": "^1.23",
+		"curl/curl": "^1.9",
+		"cocur/slugify": "^3.1"
+	}
+}
