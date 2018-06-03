@@ -7,19 +7,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Time: 02:36
  */
 $config['list_location']    = array(
-    'anh-quoc' => 'Anh quốc',
+    'thien-duong' => 'Thiên đường',
     'doi-nui' => 'Đồi núi',
-    'final-fantasy' => 'Fantasy',
-    'ha-noi' => 'Hà Nội',
+    'song-suoi' => 'Sông suối',
     'khong-gian-bien' => 'Không gian biển',
     'khong-gian-mua' => 'Không gian mưa',
     'khong-gian-rung' => 'Không gian rừng',
-    'middle-earth' => 'Middle Earth',
+    'viet-nam' => 'Việt Nam',
+    'ha-noi' => 'Hà Nội',
+    'anh-quoc' => 'Anh quốc',
     'paris' => 'Paris',
     'party' => 'Party',
-    'song-suoi' => 'Sông suối',
-    'thien-duong' => 'Thiên đường',
-    'viet-nam' => 'Việt Nam',
+    'final-fantasy' => 'Fantasy',
+    'middle-earth' => 'Middle Earth',
     'vung-dat-ghibli-huyen-thoai' => 'Vùng đất Ghibli'
 );
 $config['list_location_id'] = array(
