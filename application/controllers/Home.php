@@ -69,19 +69,20 @@ class Home extends CI_Controller
         {
             redirect();
         }
-        $uriString                = 'den-' . $location_id . '-va-nghe-nhac-' . $music_id;
-        $playlistData             = $list_playlist[$music_id];
-        $data                     = array();
-        $data['sites']            = arrayToObject(config_item('site_data'));
-        $data['author']           = arrayToObject(config_item('site_author'));
-        $data['tracking']         = arrayToObject(config_item('tracking_code'));
-        $data['list_location']    = $list_location;
-        $data['list_location_id'] = $list_location_id;
-        $data['list_playlist']    = $list_playlist;
-        $data['page_title']       = 'Đến ' . $list_location[$location_id] . ' và nghe nhạc ' . $playlistData['name'];
-        $data['canonical_url']    = site_url($uriString);
-        $data['current_location'] = $location_id;
-        $data['current_playlist'] = $music_id;
+        $uriString                   = 'den-' . $location_id . '-va-nghe-nhac-' . $music_id;
+        $playlistData                = $list_playlist[$music_id];
+        $data                        = array();
+        $data['sites']               = arrayToObject(config_item('site_data'));
+        $data['author']              = arrayToObject(config_item('site_author'));
+        $data['tracking']            = arrayToObject(config_item('tracking_code'));
+        $data['list_location']       = $list_location;
+        $data['list_location_id']    = $list_location_id;
+        $data['list_playlist']       = $list_playlist;
+        $data['page_title']          = 'Đến ' . $list_location[$location_id] . ' và nghe nhạc ' . $playlistData['name'];
+        $data['canonical_url']       = site_url($uriString);
+        $data['current_location_db'] = $list_location[$location_id];
+        $data['current_location']    = $location_id;
+        $data['current_playlist']    = $music_id;
         $this->load->view(self::TPL_FOLDER . 'page_index', $data);
     }
 }

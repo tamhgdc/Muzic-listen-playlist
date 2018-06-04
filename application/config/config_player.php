@@ -55,7 +55,8 @@ $config['list_location']    = array(
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui6.gif',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui7.gif',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui8.gif'
-        )
+        ),
+        'media_files' => base_url('assets/media/tieng-nuoc-chay.mp3')
     ),
     'song-suoi' => array(
         'name' => 'Sông suối',
@@ -120,7 +121,8 @@ $config['list_location']    = array(
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua12.gif',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua13.gif',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua14.gif'
-        )
+        ),
+        'media_files' => base_url('assets/media/tieng-mua-roi.mp3')
     ),
     'khong-gian-rung' => array(
         'name' => 'Không gian rừng',
