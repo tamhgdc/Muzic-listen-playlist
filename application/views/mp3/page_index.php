@@ -28,23 +28,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta property="og:site_name" content="<?=$sites->site_name;?>" />
     <meta property="og:description" content="<?=$page_title;?> - <?=$sites->site_name;?>" />
     <link href="<?php echo $author->name; ?>" rel="author" />
-    <link href="<?php echo assets_url('statics'); ?>/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="<?php echo assets_url('statics'); ?>/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="<?php echo assets_url('statics/images/favicon.ico'); ?>" rel="shortcut icon" type="image/x-icon" />
+    <link href="<?php echo assets_url('statics/css/font-awesome.min.css'); ?>" rel="stylesheet" />
     <!--[if IE 7]>
-    <link href="<?php echo assets_url('statics'); ?>/css/font-awesome-ie7.min.css" rel="stylesheet" />
+    <link href="<?php echo assets_url('statics/css/font-awesome-ie7.min.css'); ?>" rel="stylesheet" />
     <![endif]-->
-    <link href="<?php echo assets_url('statics'); ?>/css/quankhuya.css" rel="stylesheet" />
-    <link href="<?php echo assets_url('statics'); ?>/css/jplayer.pink.flag.css" rel="stylesheet" />
-    <link href="<?php echo assets_url('statics'); ?>/css/pink-modified.css" rel="stylesheet" />
-    <link href="<?php echo assets_url('statics'); ?>/css/supersized.css" rel="stylesheet" type="text/css" media="screen" />
-    <link href="<?php echo assets_url('statics'); ?>/css/index.css" rel="stylesheet" type="text/css" media="screen" />
-    <script type="text/javascript" src="<?php echo assets_url('statics'); ?>/js/jquery-1.9.1.min.js"> </script>
-    <script type="text/javascript" src="<?php echo assets_url('statics'); ?>/js/jquery.idTabs.min.js"></script>
-    <script type="text/javascript" src="<?php echo assets_url('statics'); ?>/js/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="<?php echo assets_url('statics'); ?>/js/jplayer.playlist.min.js"></script>
-    <script type="text/javascript" src="<?php echo assets_url('statics'); ?>/js/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="<?php echo assets_url('statics'); ?>/js/supersized.3.2.7.min.js"></script>
-    <script type="text/javascript" src="<?php echo assets_url('statics'); ?>/js/supersized.shutter.js"></script>
+    <link href="<?php echo assets_url('statics/css/quankhuya.css'); ?>" rel="stylesheet" />
+    <link href="<?php echo assets_url('statics/css/jplayer.pink.flag.css'); ?>" rel="stylesheet" />
+    <link href="<?php echo assets_url('statics/css/pink-modified.css'); ?>" rel="stylesheet" />
+    <link href="<?php echo assets_url('statics/css/supersized.css'); ?>" rel="stylesheet" type="text/css" media="screen" />
+    <link href="<?php echo assets_url('statics/css/index.css'); ?>" rel="stylesheet" type="text/css" media="screen" />
+    <script type="text/javascript" src="<?php echo assets_url('statics/js/jquery-1.9.1.min.js'); ?>"> </script>
+    <script type="text/javascript" src="<?php echo assets_url('statics/js/jquery.idTabs.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url('statics/js/jquery.jplayer.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url('statics/js/jplayer.playlist.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url('statics/js/jquery.easing.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url('statics/js/supersized.3.2.7.min.js'); ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url('statics/js/supersized.shutter.js'); ?>"></script>
     <script type="text/javascript" src="<?php
     if (isset($current_playlist))
     {
@@ -207,6 +207,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- <div class="fb-like" data-href="<?php echo $canonical_url; ?>" data-send="false" data-width="80" data-show-faces="false" data-colorscheme="dark"></div> -->
     <div class="fb-like" data-href="<?php echo $canonical_url; ?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 </div><!--/fanpage-like-->
-<script type="text/javascript" src="<?php echo assets_url('statics'); ?>/js/index.js"></script>
+<script type="text/javascript" src="<?php echo assets_url('statics/js/index.js?version=1.0.2'); ?>"></script>
 </body>
 </html>
