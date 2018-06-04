@@ -55,7 +55,8 @@ $config['list_location']    = array(
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui6.gif',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui7.gif',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui8.gif'
-        )
+        ),
+        'media_files' => base_url('assets/media/tieng-nuoc-chay.mp3')
     ),
     'song-suoi' => array(
         'name' => 'Sông suối',
@@ -120,7 +121,8 @@ $config['list_location']    = array(
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua12.gif',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua13.gif',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua14.gif'
-        )
+        ),
+        'media_files' => base_url('assets/media/tieng-mua-roi.mp3')
     ),
     'khong-gian-rung' => array(
         'name' => 'Không gian rừng',
@@ -215,6 +217,30 @@ $config['list_location']    = array(
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh16.jpg',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh17.jpg',
             'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh18.jpg'
+        )
+    ),
+    'wakanda-forever' => array(
+        'name' => 'Wakanda',
+        'images' => array(
+            base_url('assets/background/wakanda/wakanda-01.png'),
+            base_url('assets/background/wakanda/wakanda-02.jpg'),
+            base_url('assets/background/wakanda/wakanda-03.jpg'),
+            base_url('assets/background/wakanda/wakanda-04.jpg'),
+            base_url('assets/background/wakanda/wakanda-05.jpg'),
+            base_url('assets/background/wakanda/wakanda-06.jpg'),
+            base_url('assets/background/wakanda/wakanda-07.jpg'),
+            base_url('assets/background/wakanda/wakanda-08.jpg'),
+            base_url('assets/background/wakanda/wakanda-09.jpg'),
+            base_url('assets/background/wakanda/wakanda-10.jpg'),
+            base_url('assets/background/wakanda/wakanda-11.jpg'),
+            base_url('assets/background/wakanda/wakanda-12.jpg'),
+            base_url('assets/background/wakanda/wakanda-13.jpg'),
+            base_url('assets/background/wakanda/wakanda-14.jpg'),
+            base_url('assets/background/wakanda/wakanda-15.jpg'),
+            base_url('assets/background/wakanda/wakanda-16.jpg'),
+            base_url('assets/background/wakanda/wakanda-17.jpg'),
+            base_url('assets/background/wakanda/wakanda-18.jpg'),
+            base_url('assets/background/wakanda/wakanda-19.jpg')
         )
     ),
     'paris' => array(
