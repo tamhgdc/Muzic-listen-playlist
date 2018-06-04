@@ -6,21 +6,289 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Date: 6/2/18
  * Time: 02:36
  */
+// Location Data
 $config['list_location']    = array(
-    'thien-duong' => 'Thiên đường',
-    'doi-nui' => 'Đồi núi',
-    'song-suoi' => 'Sông suối',
-    'khong-gian-bien' => 'Không gian biển',
-    'khong-gian-mua' => 'Không gian mưa',
-    'khong-gian-rung' => 'Không gian rừng',
-    'viet-nam' => 'Việt Nam',
-    'ha-noi' => 'Hà Nội',
-    'anh-quoc' => 'Anh quốc',
-    'paris' => 'Paris',
-    'party' => 'Party',
-    'final-fantasy' => 'Fantasy',
-    'middle-earth' => 'Middle Earth',
-    'vung-dat-ghibli-huyen-thoai' => 'Vùng đất Ghibli'
+    'thien-duong' => array(
+        'name' => 'Thiên đường',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide31.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide32.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide33.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide34.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide35.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide36.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide37.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide38.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide39.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide40.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide41.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide42.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide43.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide44.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide45.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide46.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide47.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide48.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide49.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide50.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide51.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide52.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide53.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide54.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide55.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide56.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide57.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide58.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide59.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide60.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/thien-duong/slide61.jpg'
+        )
+    ),
+    'doi-nui' => array(
+        'name' => 'Đồi núi',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui1.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui2.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui3.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui4.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui5.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui6.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui7.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/doi-nui/nui8.gif'
+        )
+    ),
+    'song-suoi' => array(
+        'name' => 'Sông suối',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide62.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide63.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide64.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide65.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide66.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide67.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide68.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide69.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide70.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide71.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide72.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide73.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide74.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide75.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide76.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide77.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide78.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide79.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide80.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide81.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide82.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide83.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide84.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide85.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide86.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide87.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide88.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide89.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide90.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/song-suoi/slide91.jpg'
+        )
+    ),
+    'khong-gian-bien' => array(
+        'name' => 'Không gian biển',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/bien/bien1.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/bien/bien2.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/bien/bien3.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/bien/bien4.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/bien/bien5.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/bien/bien6.gif'
+        )
+    ),
+    'khong-gian-mua' => array(
+        'name' => 'Không gian mưa',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua1.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua2.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua3.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua4.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua5.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua6.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua7.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua8.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua9.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua10.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua11.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua12.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua13.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/rainy/mua14.gif'
+        )
+    ),
+    'khong-gian-rung' => array(
+        'name' => 'Không gian rừng',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide2.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide4.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide5.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide6.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide7.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide8.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide9.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide10.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide11.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide12.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide13.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide14.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide15.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide16.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide17.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide18.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide19.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide20.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide21.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide22.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide23.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide24.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide25.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide26.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide27.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide28.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide29.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/khong-gian-rung/slide30.jpg'
+        )
+    ),
+    'viet-nam' => array(
+        'name' => 'Việt Nam',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam2.jpeg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam4.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam5.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam6.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam7.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam8.JPG',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam9.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam10.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam11.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam12.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam13.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam14.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam15.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/viet-nam/vietnam16.jpg'
+        )
+    ),
+    'ha-noi' => array(
+        'name' => 'Hà Nội',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi2.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi4.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi5.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi6.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi7.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi8.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi9.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi10.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ha-noi/hanoi11.jpg'
+        )
+    ),
+    'anh-quoc' => array(
+        'name' => 'Anh quốc',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh2.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh4.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh5.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh6.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh7.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh8.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh9.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh10.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh11.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh12.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh13.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh14.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh15.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh16.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh17.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/anh-quoc/anh18.jpg'
+        )
+    ),
+    'paris' => array(
+        'name' => 'Paris',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris2.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris4.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris5.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris6.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris7.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris8.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris9.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris10.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris11.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/paris/paris12.jpg'
+        )
+    ),
+    'party' => array(
+        'name' => 'Party',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/party/party1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/party/party2.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/party/party3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/party/party4.gif',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/party/party5.jpg'
+        )
+    ),
+    'final-fantasy' => array(
+        'name' => 'Fantasy',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx2.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx4.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx5.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx6.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx7.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx8.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ffx/ffx9.jpg'
+        )
+    ),
+    'middle-earth' => array(
+        'name' => 'Middle Earth',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR2.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR4.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR5.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR6.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR7.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR8.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/LOTR/LOTR9.jpg'
+        )
+    ),
+    'vung-dat-ghibli-huyen-thoai' => array(
+        'name' => 'Vùng đất Ghibli',
+        'images' => array(
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli1.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli2.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli3.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli4.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli5.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli6.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli7.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli8.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli9.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli10.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli11.jpg',
+            'http://s3-ap-southeast-1.amazonaws.com/khuya/media/wallpapers/ghibli/ghibli12.jpg'
+        )
+    )
 );
 $config['list_location_id'] = array(
     'thien-duong',

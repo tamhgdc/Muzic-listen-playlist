@@ -131,7 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <?php
                 foreach ($list_location as $key => $value)
                 {
-                    echo '<div tag-id="' . trim($key) . '" class="item location-tag">' . trim($value) . '</div>';
+                    echo '<div tag-id="' . trim($key) . '" class="item location-tag">' . trim($value['name']) . '</div>';
                 }
                 ?>
             </div><!--/choice-tag - địa điểm -->
