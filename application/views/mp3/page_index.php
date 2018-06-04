@@ -73,13 +73,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script type="text/javascript" src="<?php
     if (isset($current_location))
     {
-        echo assets_url('mp3/background/'.$current_location);
+        echo base_url('background/index/'.trim($current_location));
     }
     else
     {
-        echo assets_url('mp3'); ?>/background/<?php echo random_element($list_location_id);
+        echo base_url('background/index/'.random_element($list_location_id));
     }
-    ?>.js"></script>
+    ?>"></script>
     <a class="quankhuya-description" href="<?php echo base_url(); ?>" target="_blank"><?php echo $sites->site_name; ?></a>
     <div class="background-pattern"></div>
     <div class="page-like">
