@@ -22,8 +22,7 @@ class Playlist extends CI_Controller
         $this->load->helper(array(
             'url',
             'string',
-            'array',
-            'site_player'
+            'array'
         ));
         $this->load->library(array(
             'requests',

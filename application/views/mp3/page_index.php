@@ -73,13 +73,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script type="text/javascript" src="<?php
     if (isset($current_location))
     {
-        echo assets_url('mp3/background/'.$current_location);
+        echo base_url('background/index/'.trim($current_location));
     }
     else
     {
-        echo assets_url('mp3'); ?>/background/<?php echo random_element($list_location_id);
+        echo base_url('background/index/'.random_element($list_location_id));
     }
-    ?>.js"></script>
+    ?>"></script>
     <a class="quankhuya-description" href="<?php echo base_url(); ?>" target="_blank"><?php echo $sites->site_name; ?></a>
     <div class="background-pattern"></div>
     <div class="page-like">
@@ -116,9 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </script>
 <ul id="list-menu-selection">
     <li><a class="tab-click-item" href="#my-player"><img src="<?php echo assets_url('statics'); ?>/images/playlist_icon.png"/></a></li><!--/player-->
-    <li><a class="tab-click-item" href="#show-comment"><img src="<?php echo assets_url('statics'); ?>/images/comment_icon.png"/>
-            <div class="noti_bubble"><fb:comments-count href="<?php echo $canonical_url; ?>">0</fb:comments-count></div>
-        </a></li><!--/comment user facebook -->
+    <li><a class="tab-click-item" href="#show-comment"><img src="<?php echo assets_url('statics'); ?>/images/comment_icon.png"/><div class="noti_bubble"><fb:comments-count href="<?php echo $canonical_url; ?>">0</fb:comments-count></div></a></li><!--/comment user facebook -->
     <li><a class="tab-click-item" href="#show-change"><i class="icon-cog"></i></a></li><!--/change music style -->
 </ul>
 <!-- Phần content chính kết thúc ở đây -->
@@ -133,7 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <?php
                 foreach ($list_location as $key => $value)
                 {
-                    echo '<div tag-id="' . trim($key) . '" class="item location-tag">' . trim($value) . '</div>';
+                    echo '<div tag-id="' . trim($key) . '" class="item location-tag">' . trim($value['name']) . '</div>';
                 }
                 ?>
             </div><!--/choice-tag - địa điểm -->
