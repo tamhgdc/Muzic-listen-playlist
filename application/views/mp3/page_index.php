@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><?=$page_title;?> - <?=$sites->site_name;?></title>
     <meta name="description" content="<?=$page_title;?> - <?=$sites->site_name;?>"/>
-    <meta name="keywords" content="nghe nhạc, nhạc online, nhạc không lời"/>
+    <meta name="keywords" content="<?=$sites->keywords;?>"/>
     <meta content="Hung Nguyen" name="author"/>
     <meta name="robots" content="index,follow,nocache,noodp" />
     <meta name='revisit-after' content='1 days' />
