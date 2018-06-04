@@ -2,3 +2,7 @@ Version 1.0
 - Create Project
 - Create Playlist
 - Create Location
+
+Version 2.0
+- Loại bỏ các file JS tĩnh
+- Bổ sung cấu trúc Location sử dụng PHP
