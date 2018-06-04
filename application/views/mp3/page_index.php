@@ -116,9 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </script>
 <ul id="list-menu-selection">
     <li><a class="tab-click-item" href="#my-player"><img src="<?php echo assets_url('statics'); ?>/images/playlist_icon.png"/></a></li><!--/player-->
-    <li><a class="tab-click-item" href="#show-comment"><img src="<?php echo assets_url('statics'); ?>/images/comment_icon.png"/>
-            <div class="noti_bubble"><fb:comments-count href="<?php echo $canonical_url; ?>">0</fb:comments-count></div>
-        </a></li><!--/comment user facebook -->
+    <li><a class="tab-click-item" href="#show-comment"><img src="<?php echo assets_url('statics'); ?>/images/comment_icon.png"/><div class="noti_bubble"><fb:comments-count href="<?php echo $canonical_url; ?>">0</fb:comments-count></div></a></li><!--/comment user facebook -->
     <li><a class="tab-click-item" href="#show-change"><i class="icon-cog"></i></a></li><!--/change music style -->
 </ul>
 <!-- Phần content chính kết thúc ở đây -->
