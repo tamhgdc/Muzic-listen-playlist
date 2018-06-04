@@ -78,7 +78,7 @@ class Home extends CI_Controller
         $data['list_location']       = $list_location;
         $data['list_location_id']    = $list_location_id;
         $data['list_playlist']       = $list_playlist;
-        $data['page_title']          = 'Đến ' . $list_location[$location_id] . ' và nghe nhạc ' . $playlistData['name'];
+        $data['page_title']          = 'Đến ' . $list_location[$location_id]['name'] . ' và nghe nhạc ' . $playlistData['name'];
         $data['canonical_url']       = site_url($uriString);
         $data['current_location_db'] = $list_location[$location_id];
         $data['current_location']    = $location_id;

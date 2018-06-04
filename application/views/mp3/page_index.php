@@ -70,13 +70,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 <div id="fb-root"></div>
 <div class="nguyenanhung-wrapper">
+    <?php
+    if (isset($current_location_db['media_files']))
+    {
+        echo '<audio autoplay="autoplay" loop="loop" preload="auto"><source src="' . trim($current_location_db['media_files']) . '" type="audio/mpeg" />Trình duyệt của bạn không hỗ trợ HTML/audio template</audio>';
+    }
+    ?>
     <script type="text/javascript" src="<?php
     if (isset($current_location))
     {
-        if (isset($current_location_db['media_files']))
-        {
-            echo '<audio autoplay="autoplay" loop="loop" preload="auto"><source src="' . trim($current_location_db['media_files']) . '" type="audio/mpeg" />Trình duyệt của bạn không hỗ trợ HTML/audio template</audio>';
-        }
         echo base_url('background/index/'.trim($current_location));
     }
     else
