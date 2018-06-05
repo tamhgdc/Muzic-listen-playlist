@@ -35,12 +35,31 @@ class Grab_link
         $getContents = $this->CI->requests->sendRequest(trim($url));
         $xmlContents = @simplexml_load_string($getContents, 'SimpleXMLElement', LIBXML_NOCDATA);
         $str_output  = '';
-        if (isset($xmlContents->track))
-        {
-            foreach ($xmlContents->track as $key => $item)
-            {
+        if (isset($xmlContents->track)) {
+            foreach ($xmlContents->track as $key => $item) {
                 // Str Output theo format của jPlayer
                 $str_output .= '{title:"' . trim($item->title) . '",mp3:"' . trim($item->location) . '"},';
+            }
+        }
+        return trim($str_output, ',');
+    }
+    /**
+     * Grab Link Zing MP3
+     * @param string $url
+     * @return string
+     */
+    public function zing_mp3($url = '')
+    {
+        $getContents = $this->CI->requests->sendRequest(trim($url));
+        $xmlContents = @simplexml_load_string($getContents, 'SimpleXMLElement', LIBXML_NOCDATA);
+        $str_output  = '';
+        if (isset($xmlContents->data->items)) {
+            foreach ($xmlContents->data->items as $key => $item) {
+                // Str Output theo format của jPlayer
+                $encode_source = json_encode($item->source);
+                $source        = json_decode($encode_source, true);
+                $mp3_url       = isset($source['320']) ? trim($source['320']) : trim($source['128']);
+                $str_output .= '{title:"' . trim($item->title) . '",mp3:"' . $mp3_url . '"},';
             }
         }
         return trim($str_output, ',');
