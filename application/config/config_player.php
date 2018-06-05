@@ -336,72 +336,84 @@ $config['list_playlist']    = array(
     // Hot Trending
     'top-100-nhac-viet' => array(
         'name' => 'Top 100 Việt',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '76d4274f8557249cfe855043bb500f11'
         )
     ),
     'top-100-nhac-rap-viet' => array(
         'name' => 'Top 100 RAP Việt',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'e9f3411ed8d8b9a3dd55f587fcc915f0'
         )
     ),
     'top-100-nhac-remix-viet' => array(
         'name' => 'Top 100 Remix Việt',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '52574d5cda867c70514819ded54fee7c'
         )
     ),
     'top-100-nhac-pop-au-my' => array(
         'name' => 'Top 100 POP Âu Mỹ',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '2d531589a5e88cd540217c007112ff2e'
         )
     ),
     'top-100-nhac-edm-au-my' => array(
         'name' => 'Top 100 EDM Âu Mỹ',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '404997bd0812220730dc9a87b541d69c'
         )
     ),
     'top-100-nhac-rnb-au-my' => array(
         'name' => 'Top 100 R&B/Hip Hop/Rap Âu Mỹ',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '57b9a11ef3ea718819d5d82d591e0662'
         )
     ),
     'top-100-nhac-latin-au-my' => array(
         'name' => 'Top 100 Latin Âu Mỹ',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '156fe67904dde9ddb870935856c5c93b'
         )
     ),
     'top-100-nhac-country-au-my' => array(
         'name' => 'Top 100 Country Âu Mỹ',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'fc42418b7a3366bc636a002e0d9c31a1'
         )
     ),
     'top-100-nhac-chau-a' => array(
         'name' => 'Top 100 châu Á',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '3605c25d9da48ab5c30716ce86e22b4a'
         )
     ),
     'top-100-nhac-hoa' => array(
         'name' => 'Top 100 nhạc Hoa',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'dff8c50989c52c920d6bc52edc6713a7'
         )
     ),
     'top-100-nhac-nhat' => array(
         'name' => 'Top 100 nhạc Nhật',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '102c5fd5b3494b2509c486801be9a34e'
         )
     ),
     'top-100-nhac-khong-loi-hay-nhat' => array(
         'name' => 'Top 100 nhạc Không lời',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '84be112e71efc7b7dc77b11da01eebb0'
         )
@@ -409,18 +421,21 @@ $config['list_playlist']    = array(
     // Ca sĩ Việt Nam
     'son-tung-mtp' => array(
         'name' => 'Sơn Tùng M-TP',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '4eb1101485e57931ee2a2a04705b3fe4'
         )
     ),
     'isaac' => array(
         'name' => 'Isaac',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '88bd4bb2e9b746159d1c100e2180c8cb'
         )
     ),
     'bich-phuong-idol' => array(
         'name' => 'Bích Phương Idol',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "72251fa812e73b11a0998c46c1dbbeb0",
             "7aede3e862fc57bde329dbd702eca483"
@@ -428,6 +443,7 @@ $config['list_playlist']    = array(
     ),
     'bui-anh-tuan' => array(
         'name' => 'Bùi Anh Tuấn',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "d2916b3790bccecc7ed9c60ed8da542e",
             "e58a1594e0947f34d7e5a196daf35598",
@@ -455,6 +471,7 @@ $config['list_playlist']    = array(
     ),
     'ha-anh-tuan' => array(
         'name' => 'Hà Anh Tuấn',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "e19763e2558d4befe4b7fc8d426d30e2",
             "6115aa9306c2123e3786a7005d32e5e5",
@@ -480,6 +497,7 @@ $config['list_playlist']    = array(
     ),
     'hoa-vinh' => array(
         'name' => 'Hoa Vinh',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "921e38646fab4aadb02c506315a3d6f2",
             "5402dc176b26154202400387d944fdbb",
@@ -488,6 +506,7 @@ $config['list_playlist']    = array(
     ),
     'chau-khai-phong' => array(
         'name' => 'Châu Khải Phong',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "6ce0245f5eb3c4c39dbb79df283b5887",
             "99e18292e8b003096feb29c562fa68f6",
@@ -496,6 +515,7 @@ $config['list_playlist']    = array(
     ),
     'trinh-dinh-quang' => array(
         'name' => 'Trịnh Đình Quang',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "3f6a11e827d5094be614b7dbb42222a1",
             "b820c3f16e9bf04cff3153c40993e077",
@@ -506,6 +526,7 @@ $config['list_playlist']    = array(
     ),
     'le-bao-binh' => array(
         'name' => 'Lê Bảo Bình',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "f980ca99a21ff4ec576f64436ad384b5",
             "238daf36899a5d55a6f3954a6a672edf",
@@ -516,6 +537,7 @@ $config['list_playlist']    = array(
     ),
     'chu-bin' => array(
         'name' => 'Chu Bin',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "a1761717cfa21cc9b65f6d602ac985fc",
             "f5d644e5a9b96b61e20d959693fc5d04",
@@ -528,6 +550,7 @@ $config['list_playlist']    = array(
     ),
     'wanbi-tuan-anh' => array(
         'name' => 'Wanbi Tuấn Anh',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "405408bdbee708b52b2e2c75c0645b4f",
             "8de60f8377a44011a573aeb77dd2d19b",
@@ -537,6 +560,7 @@ $config['list_playlist']    = array(
     ),
     'thuy-chi' => array(
         'name' => 'Thùy Chi',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "4e6b0a0861a086c1a860022fc5627aa0",
             "f2c044c19393f041572a9c4624b79309",
@@ -554,6 +578,7 @@ $config['list_playlist']    = array(
     ),
     'tuan-hung' => array(
         'name' => 'Tuấn Hưng',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "3bc64fb6b8a3cc985f3f7a5a0232aa00",
             "d55b24feacf9673baaf02293df9e2e52",
@@ -562,6 +587,7 @@ $config['list_playlist']    = array(
     ),
     'thanh-bui' => array(
         'name' => 'Thanh Bùi',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "edb14b02717af32d05f64e01c7d8834c",
             "5f3f0875e06ea0ec5e8ed6dc017f9312",
@@ -579,6 +605,7 @@ $config['list_playlist']    = array(
     ),
     'the-men' => array(
         'name' => 'The Men',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "c0742c54bcf8bc7b7f781274421390e2",
             "8c139029d8fdbeec3bda50528ea5ff1c",
@@ -600,6 +627,7 @@ $config['list_playlist']    = array(
     ),
     'dan-truong' => array(
         'name' => 'Đan Trường',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "c40ac80549d721aaf46cb809337b97c5",
             "e5e1cab3a8d286631c0591808d22dcf1",
@@ -657,6 +685,7 @@ $config['list_playlist']    = array(
     ),
     'lam-truong' => array(
         'name' => 'Lam Trường',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "d3b25ee8b7e142071e0f15578aadfa72",
             "d1519f2a7fe5f116aa0dd197cd7f8811",
@@ -695,6 +724,7 @@ $config['list_playlist']    = array(
     ),
     'tuan-ngoc' => array(
         'name' => 'Tuấn Ngọc',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "6f213dcdf6973c0eed13d7f3c9fd40aa",
             "4e44aace2438f8e83a2c29b15ba62260",
@@ -705,6 +735,7 @@ $config['list_playlist']    = array(
     ),
     'vu-duy-khanh' => array(
         'name' => 'Vũ Duy Khánh',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "f59173c20e1e80d1e7d2c3daa2d84bac",
             "308499aea4235747f98e6d03afb2923c",
@@ -721,6 +752,7 @@ $config['list_playlist']    = array(
     ),
     'bang-kieu' => array(
         'name' => 'Bằng Kiều',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "64bc7071e37410dc81661894dff1331f",
             "005c26287b4bbf2bc5fa6f016deddc85"
@@ -728,18 +760,21 @@ $config['list_playlist']    = array(
     ),
     'le-hieu' => array(
         'name' => 'Lê Hiếu',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '7f2e3f745a11aa456c634fcdbebb362a'
         )
     ),
     'le-quyen' => array(
         'name' => 'Lệ Quyên',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '685e72a5b3976e3907e028b9b7ec23a0'
         )
     ),
     'den-vau' => array(
         'name' => 'Đen Vâu',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'b932343ae879deba3946031329aa5015',
             '1f151ad321a3c1e3018b45c03e55a7a9',
@@ -751,6 +786,7 @@ $config['list_playlist']    = array(
     ),
     'lk' => array(
         'name' => 'LK',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "764a37690e6bbf364d6ce886f38aeeed",
             "cfee86d32aedb32e24276e7ce8edcb97",
@@ -767,6 +803,7 @@ $config['list_playlist']    = array(
     ),
     'young-uno' => array(
         'name' => 'Young Uno',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "610b3a378331fc75f9e8c879d3fd040f",
             "22b424e85e719e668c72a25f72d0cf88"
@@ -774,6 +811,7 @@ $config['list_playlist']    = array(
     ),
     'karik' => array(
         'name' => 'Karik',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "e4d23ed1f7e285790a86d2648789205e",
             "83135725c9556e44390811ab8f252d95",
@@ -783,6 +821,7 @@ $config['list_playlist']    = array(
     ),
     'khac-viet' => array(
         'name' => 'Khắc Việt',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "35eee00b7eea5a9a86a3c4bef7819056",
             "f0e001c6055ee9a74fffe775ab3f92b0",
@@ -802,6 +841,7 @@ $config['list_playlist']    = array(
     ),
     'justa-tee' => array(
         'name' => 'Justa Tee',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "3162a809c1e5486ab176cd9f549d2a43",
             "21d3a05dd793078979a9af852b7c22ac"
@@ -809,6 +849,7 @@ $config['list_playlist']    = array(
     ),
     'yanbi' => array(
         'name' => 'Yanbi',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "641ef772a494c3249ad618304ed0ce97",
             "cfdbb21c2ae63694161b16cfb248afdc",
@@ -818,6 +859,7 @@ $config['list_playlist']    = array(
     ),
     'minh-vuong-m4u' => array(
         'name' => 'Minh vương M4U',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "2d90120c3645955b4d762615ed212a87",
             "dd89f90b1cbc521a5bda21ebe56e876e",
@@ -830,6 +872,7 @@ $config['list_playlist']    = array(
     ),
     'nguyen-hai-phong' => array(
         'name' => 'Nguyễn Hải Phong',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "0acde0123ae3b82351aa0f85117a79c0",
             "0262f6da8ce5d957b4bb954064bec1c0",
@@ -838,6 +881,7 @@ $config['list_playlist']    = array(
     ),
     'dam-vinh-hung' => array(
         'name' => 'Đàm Vĩnh Hưng',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "2517f75f4954faa871116d4031ee5541",
             "2c3585798ded5e0084e0217dfbe55948",
@@ -847,6 +891,7 @@ $config['list_playlist']    = array(
     ),
     'dang-khoi' => array(
         'name' => 'Đăng Khôi',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "4d28454e84d0a0ddbe39143a0a57d2f3",
             "0bc50a53465509ee5001c8582d4f9b02",
@@ -867,6 +912,7 @@ $config['list_playlist']    = array(
     ),
     'quang-le' => array(
         'name' => 'Quang Lê',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "8bfc3bfd805bd4d9fa42907b887d6ed9",
             "db0e9b7409cb047cae17399a75e1c51b",
@@ -887,6 +933,7 @@ $config['list_playlist']    = array(
     ),
     'dan-nguyen' => array(
         'name' => 'Đan Nguyên',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "f20a23c814eff6b25fc5f41028eea7bf",
             "99f868b5f5a8a909cc096ffb831ec67b",
@@ -897,6 +944,7 @@ $config['list_playlist']    = array(
     ),
     'hoang-thuc-linh' => array(
         'name' => 'Hoàng Thục Linh',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "2b21495b4abcb64bfc47a216ba029aa3",
             "d8f31f69649b871e62590581befa29db"
@@ -904,6 +952,7 @@ $config['list_playlist']    = array(
     ),
     'lam-nhat-tien' => array(
         'name' => 'Lâm Nhật Tiến',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "3c424542160b6ce81e2d616730e865d0",
             "0d5861b0d5dfae11a1ce470672e8f922",
@@ -921,6 +970,7 @@ $config['list_playlist']    = array(
     // Ca sĩ Quốc tế
     'eminem' => array(
         'name' => 'Eminem',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "bbf3d78fedeee28c290e4998c351996d",
             "adcc13b14bf562a9c2f993ffb38be663",
@@ -934,6 +984,7 @@ $config['list_playlist']    = array(
     ),
     'alan-walker' => array(
         'name' => 'Alan Walker',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "09c51f6fedd67329130a543be62eb5af",
             "630e067096c04c1a3c2a1f25ae8c9ae9",
@@ -944,6 +995,7 @@ $config['list_playlist']    = array(
     ),
     'taylor-swift' => array(
         'name' => 'Taylor Swift',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "467e2bbffe171ee8127ed13af2287848",
             "351be436ddbf18c06c23334e13eabf1f",
@@ -954,6 +1006,7 @@ $config['list_playlist']    = array(
     ),
     'bruno-mars' => array(
         'name' => 'Bruno Mars',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "289e89a6dcfd557d91765403bf463690",
             "57e59a10d786f7f389954fd6cb179d5b",
@@ -962,6 +1015,7 @@ $config['list_playlist']    = array(
     ),
     'linkin-park' => array(
         'name' => 'Linkin Park',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "22e8b3000dc2931e33a657bb560b62b0",
             "079e068121331299f50b6817497bca8e"
@@ -969,6 +1023,7 @@ $config['list_playlist']    = array(
     ),
     'mariah-carey' => array(
         'name' => 'Mariah Carey',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "9c727d0d0635466649add360cd45e10e",
             "7390deea42a096545d090224df20b3c7",
@@ -980,6 +1035,7 @@ $config['list_playlist']    = array(
     ),
     'michael-jackson' => array(
         'name' => 'Michael Jackson',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "c2d421da3788c035e6d3902d403d8a7f",
             "c34df167bbc76b162e4431eea4a73390",
@@ -989,6 +1045,7 @@ $config['list_playlist']    = array(
     ),
     'michael-learns-to-rock' => array(
         'name' => 'Michael Learns to Rock',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "57df3a49a2d16db85ec746743c4cfb52",
             "a47712ea97e5c42d419d78168c21044e",
@@ -1000,6 +1057,7 @@ $config['list_playlist']    = array(
     ),
     'adele' => array(
         'name' => 'Adele',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "70f550d7dd1a6ec81c3252ea20667b51",
             "0f93505d7d1ffedcfd27ce2d5b6066dd",
@@ -1008,12 +1066,14 @@ $config['list_playlist']    = array(
     ),
     'one-direction-collection' => array(
         'name' => 'One Direction',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '110f81c00a04f68d3834f4410aadfc9c'
         )
     ),
     'tokyo-square' => array(
         'name' => 'Tokyo Square',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "7bb65a838785bdfb6fb051e1ce271da3",
             "244cf731476f16b22851afaec29827cc"
@@ -1021,6 +1081,7 @@ $config['list_playlist']    = array(
     ),
     'westlife' => array(
         'name' => 'Westlife',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "dcb2a9f0e545002655dca3cf3f23462a",
             "f1ee758b6405108ba3e7860b56b7a8d0",
@@ -1034,6 +1095,7 @@ $config['list_playlist']    = array(
     ),
     'whitney-houston' => array(
         'name' => 'Whitney Houston',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "3d884b36be67944560dc62848744ee00",
             "26907b5e10e62d5362e0e26b9c681f5f",
@@ -1047,6 +1109,7 @@ $config['list_playlist']    = array(
     ),
     'jay-chou' => array(
         'name' => 'Châu Kiệt Luân',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "1fc1b130c59a18a48e6a4cb191b6282c",
             "8a77c35b21ee65bcab691fca32035919",
@@ -1063,6 +1126,7 @@ $config['list_playlist']    = array(
     ),
     'vuong-luc-hoanh' => array(
         'name' => 'Vương Lực Hoành',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'd819614681f66ef12ba2cbd2a52b66c9'
         )
@@ -1070,18 +1134,21 @@ $config['list_playlist']    = array(
     // Tuyển tập
     'lan-song-xanh' => array(
         'name' => 'Làn sóng xanh',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'cfbd83bdf953e20c94df0559e9d79705'
         )
     ),
     '100-bai-hat-nghe-nhieu' => array(
         'name' => '100 bài hát nghe nhiều',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "3291b025d9a1ecff35cd447a91cbc4fd"
         )
     ),
     'fa-va-tu-ky' => array(
         'name' => 'FA và tự kỷ',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "bc59fb0d71f4303964e573b801788251",
             "ae8caa569f877368d11d13711949c18e",
@@ -1100,6 +1167,7 @@ $config['list_playlist']    = array(
     ),
     'bat-hu' => array(
         'name' => 'Bất hủ',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "4dd28e79706235a36c547e3d888da0d3",
             "87ad8bfe662d655a4db46559d77a4482",
@@ -1129,66 +1197,77 @@ $config['list_playlist']    = array(
     ),
     'billboard-hot-latin-songs-collection' => array(
         'name' => 'top billboard latin',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "3401b0e6c739d306211b80d88b9488e2"
         )
     ),
     'billboards-collection' => array(
         'name' => 'top billboard',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "11779096728c952ec777ee649718096e"
         )
     ),
     'korean-music-awards-collection' => array(
-        'name' => 'Kr Music Awards',
+        'name' => 'Korean Music Awards',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'a2a5cc84857e2128eae42a484e33e67d'
         )
     ),
     'mtv-music-awards-collection' => array(
         'name' => 'MTV Music Awards',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '45b078487a94ececf484f98e8e85d0e5'
         )
     ),
     'tu-dai-thien-vuong' => array(
-        'name' => 'Tứ đại thiên vương',
+        'name' => 'Tứ đại thiên vương Hong Kong',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '3e7f2fc22b8219968ca4577d05c81b73'
         )
     ),
     'bo-tu-hoan-hao-vol-1' => array(
         'name' => 'Bộ tứ Vol 1',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "8edb5a43a86053e80dc6992da59aa8e0"
         )
     ),
     'bo-tu-hoan-hao-vol-2' => array(
         'name' => 'Bộ tứ Vol 2',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "1f1515d177532069bc69a1091b82330c"
         )
     ),
     'bo-tu-hoan-hao-vol-3' => array(
         'name' => 'Bộ tứ Vol 3',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "e09194a60c20f69c8c8fa4c4ba767320"
         )
     ),
     'bo-tu-hoan-hao-vol-4' => array(
         'name' => 'Bộ tứ Vol 4',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "fade33959977775818c195f1a0e530a4"
         )
     ),
     'bo-tu-hoan-hao-vol-5' => array(
         'name' => 'Bộ tứ Vol 5',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "3648d52dae3ed37633e5676fcbec2437"
         )
     ),
     'cafe-dang-va-mua' => array(
         'name' => 'Cafe đắng và mưa',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "d31e699dd199f242935898cadfec0fc5",
             "bbb90e78514cb8c2c20ca751e20a3ae4",
@@ -1205,12 +1284,14 @@ $config['list_playlist']    = array(
     ),
     'giang-sinh' => array(
         'name' => 'Giáng sinh',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '2273a4acca184a4062bc3acef1f0b2d3'
         )
     ),
     'hai-ngoai' => array(
         'name' => 'Hải ngoại',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "260c437bcd7af6ff0461a99c7dc9a89c",
             "260c437bcd7af6ff0461a99c7dc9a89c",
@@ -1236,12 +1317,14 @@ $config['list_playlist']    = array(
     ),
     'world-cup' => array(
         'name' => 'World Cup',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '6835b87debcd84777c11921fa9559976'
         )
     ),
     'qua-tang-sinh-nhat' => array(
         'name' => 'HPBD',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '0dbd627d26212be2513299b884c2aadf'
         )
@@ -1249,30 +1332,35 @@ $config['list_playlist']    = array(
     // Theo quốc gia
     'han' => array(
         'name' => 'Hàn',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '416000a3d769d2b7371d4064a05862bb'
         )
     ),
     'hoa' => array(
         'name' => 'Hoa',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'a96bb5c9c8e7222fe54239e70bf8a486'
         )
     ),
     'hong-kong' => array(
         'name' => 'Hong Kong',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'ec9a2d952bee0860265b569e9f056798'
         )
     ),
     'nhat' => array(
         'name' => 'Nhật',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '0df45440a7280cf983eaf56d58b6c2f2'
         )
     ),
     'phap' => array(
         'name' => 'Pháp',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'c207f277518e1dd4a843e78c91700929'
         )
@@ -1280,24 +1368,28 @@ $config['list_playlist']    = array(
     // Nhạc phim
     'phim-au-my' => array(
         'name' => 'US OST',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '23a84ebfb7a25b52ba61514c121b7c9d'
         )
     ),
     'phim-han-quoc' => array(
         'name' => 'Korea OST',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '38ba743db70f39d449324b23647071e6'
         )
     ),
     'phim-hoa-ngu' => array(
         'name' => 'China OST',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             'c15715294985de5d12dd5e740f334e78'
         )
     ),
     'phim-viet-nam' => array(
         'name' => 'Nhạc phim Việt',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '1a31f7ed1a85167bc018bcb0eec235c2'
         )
@@ -1305,6 +1397,7 @@ $config['list_playlist']    = array(
     // Không lời + thiền
     'yiruma' => array(
         'name' => 'Yiruma',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "cdd2a901491541dd265666846327d30d",
             "eb92256f8e09d37acac84667c98eba80",
@@ -1313,6 +1406,7 @@ $config['list_playlist']    = array(
     ),
     'secret-garden' => array(
         'name' => 'Secret Garden',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "5745ed77918e87c4539db16ab3790342",
             "6b910e6dbe58e09e44d7d0a3501f261c",
@@ -1322,6 +1416,7 @@ $config['list_playlist']    = array(
     ),
     'thien' => array(
         'name' => 'Thiền',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "0c5ec925a74563852882ea4d70413ad0",
             "601d3a7d2bb1fb1467f2ab709de6874b"
@@ -1329,12 +1424,14 @@ $config['list_playlist']    = array(
     ),
     'hoa-tau' => array(
         'name' => 'Hòa tấu',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '9899ddc30ecc0a9e75378b8c410071db'
         )
     ),
     'khong-loi' => array(
         'name' => 'Không lời',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "9899ddc30ecc0a9e75378b8c410071db",
             "7269e5f29afaccfc70c0a952add877f2",
@@ -1355,12 +1452,14 @@ $config['list_playlist']    = array(
     ),
     'sao-truc' => array(
         'name' => 'Sáo trúc',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             '6ac142563291fe07cb092e95da77b7bd'
         )
     ),
     'saxophone' => array(
         'name' => 'Saxophone',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "e5f1dfd545cd79b32cd238deabdf9261",
             "321551bc51c3dd618064eea9c1c50b33",
@@ -1373,6 +1472,7 @@ $config['list_playlist']    = array(
     ),
     'trinh' => array(
         'name' => 'Trịnh',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "b2147c9c94e64f19e925518e2b8ed67d",
             "a311f81e25b45e6a8a4b662923de1ffe",
@@ -1386,6 +1486,7 @@ $config['list_playlist']    = array(
     ),
     'piano' => array(
         'name' => 'Piano',
+        'from_source' => 'nhaccuatui',
         'playlist' => array(
             "eb0d7d4163b18c216195d3daa08f3e7d",
             "1c540fbb0fad1606a7b63c9edf3cf4c5",

@@ -35,9 +35,9 @@ class Playlist extends CI_Controller
     /**
      * Get Playlist
      * @param string $music_id
-     * @link  /playlist/nhaccuatui/$music_id
+     * @link  /playlist/data/$music_id
      */
-    public function nhaccuatui($music_id = '')
+    public function data($music_id = '')
     {
         $this->output->set_status_header(200)->set_content_type('application/x-javascript', 'utf-8');
         $data          = array();
@@ -46,14 +46,15 @@ class Playlist extends CI_Controller
         if (array_key_exists($playlistId, $list_playlist))
         {
             $item_playlist  = $list_playlist[$playlistId];
+            $playlistSiteId = $item_playlist['from_source'];
             $randomId       = random_element($item_playlist['playlist']);
-            $nctPlaylistUrl = $this->grabber->nhaccuatui->playlist_url . trim($randomId);
+            $playlistXmlUrl = $this->grabber->nhaccuatui->playlist_url . trim($randomId);
             // Settings Cache
             $this->load->driver('cache', self::CACHE_ADAPTER);
-            $cache_file = self::CACHE_PREFIX . md5($nctPlaylistUrl);
+            $cache_file = self::CACHE_PREFIX . md5($playlistXmlUrl);
             if (!$resultPlaylist = $this->cache->get($cache_file))
             {
-                $resultPlaylist = $this->grab_link->nhaccuatui($nctPlaylistUrl);
+                $resultPlaylist = $this->grab_link->nhaccuatui($playlistXmlUrl);
                 if (!empty($resultPlaylist))
                 {
                     // Nếu file Grab không rỗng thì mới cache
