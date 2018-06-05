@@ -11,7 +11,7 @@ class Playlist extends CI_Controller
     const TPL_FOLDER = 'mp3/';
     const CACHE_ADAPTER = array('adapter' => 'apc', 'backup' => 'file');
     const CACHE_TTL = 86400; // Cache 24 hours
-    const CACHE_PREFIX = 'PLAYLIST_NHACCUATUI_GRABBER_'; // Prefix Cache
+    const CACHE_PREFIX = 'PLAYLIST_DATA_MP3_GRABBER_'; // Prefix Cache
     protected $grabber;
     /**
      * Playlist constructor.
@@ -43,28 +43,39 @@ class Playlist extends CI_Controller
         $data          = array();
         $playlistId    = trim($music_id);
         $list_playlist = config_item('list_playlist');
-        if (array_key_exists($playlistId, $list_playlist))
-        {
+        if (array_key_exists($playlistId, $list_playlist)) {
             $item_playlist  = $list_playlist[$playlistId];
-            $playlistSiteId = $item_playlist['from_source'];
             $randomId       = random_element($item_playlist['playlist']);
-            $playlistXmlUrl = $this->grabber->nhaccuatui->playlist_url . trim($randomId);
-            // Settings Cache
-            $this->load->driver('cache', self::CACHE_ADAPTER);
-            $cache_file = self::CACHE_PREFIX . md5($playlistXmlUrl);
-            if (!$resultPlaylist = $this->cache->get($cache_file))
-            {
-                $resultPlaylist = $this->grab_link->nhaccuatui($playlistXmlUrl);
-                if (!empty($resultPlaylist))
-                {
-                    // Nếu file Grab không rỗng thì mới cache
-                    $this->cache->save($cache_file, $resultPlaylist, self::CACHE_TTL);
-                }
+            $playlistSiteId = $item_playlist['from_source'];
+            if ($playlistSiteId == 'nhaccuatui') {
+                $playlistXmlUrl = $this->grabber->nhaccuatui->playlist_url . trim($randomId);
+            } elseif ($playlistSiteId == 'zing_mp3') {
+                $playlistXmlUrl = $this->grabber->zing_mp3->playlist_url . trim($randomId);
+            } else {
+                $playlistXmlUrl = null;
             }
-            $data['playlist_data'] = $resultPlaylist;
-        }
-        else
-        {
+            if ($playlistXmlUrl !== null) {
+                // Settings Cache
+                $this->load->driver('cache', self::CACHE_ADAPTER);
+                $cache_file = self::CACHE_PREFIX . md5($playlistXmlUrl);
+                if (!$resultPlaylist = $this->cache->get($cache_file)) {
+                    if ($playlistSiteId == 'nhaccuatui') {
+                        $resultPlaylist = $this->grab_link->nhaccuatui($playlistXmlUrl);
+                    } elseif ($playlistSiteId == 'zing_mp3') {
+                        $resultPlaylist = $this->grab_link->zing_mp3($playlistXmlUrl);
+                    } else {
+                        $resultPlaylist = null;
+                    }
+                    if (!empty($resultPlaylist)) {
+                        // Nếu file Grab không rỗng thì mới cache
+                        $this->cache->save($cache_file, $resultPlaylist, self::CACHE_TTL);
+                    }
+                }
+                $data['playlist_data'] = $resultPlaylist;
+            } else {
+                $data['playlist_data'] = null;
+            }
+        } else {
             $data['playlist_data'] = null;
         }
         $this->load->view(self::TPL_FOLDER . 'playlist', $data);

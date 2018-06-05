@@ -774,14 +774,20 @@ $config['list_playlist']    = array(
     ),
     'den-vau' => array(
         'name' => 'Đen Vâu',
-        'from_source' => 'nhaccuatui',
+        'from_source' => 'zing_mp3',
         'playlist' => array(
-            'b932343ae879deba3946031329aa5015',
-            '1f151ad321a3c1e3018b45c03e55a7a9',
-            'e3d0fd744a80c76dbed3c09374acdcf8',
-            '84db8b8f09883e7c1b71556ea3adf555',
-            'c1a58953f6e8ada5c73c9da33363d5ed',
-            'be13df6455d6bfc38dd4507aa2022e0b'
+            'LncmTLmuLQXzgzZymTFGZmtZQFJbLDLJH',
+            'kHxHyZmNdivLFWByHybHLmtkWFJDLsSzC',
+            'ZHJHtLmEWaNaHunymybmZHTLWvcFZvLsN',
+            'kncGTLmxJEhCHQmyGyFmLmyLWDJFkBcQE',
+            'LmxmTZmEkphmSkJyGyFHkHtLpbcbkmmVb'
+        )
+    ),
+    'vu' => array(
+        'name' => 'Vũ',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'LmcmtkmRhkSFsgAtmybHLmykpDxDkAWlu'
         )
     ),
     'lk' => array(

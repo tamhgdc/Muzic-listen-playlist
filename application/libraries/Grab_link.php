@@ -51,15 +51,12 @@ class Grab_link
     public function zing_mp3($url = '')
     {
         $getContents = $this->CI->requests->sendRequest(trim($url));
-        $xmlContents = @simplexml_load_string($getContents, 'SimpleXMLElement', LIBXML_NOCDATA);
+        $zingMp3     = json_decode(trim($getContents), true);
         $str_output  = '';
-        if (isset($xmlContents->data->items)) {
-            foreach ($xmlContents->data->items as $key => $item) {
+        if (isset($zingMp3['data']['items'])) {
+            foreach ($zingMp3['data']['items'] as $key => $item) {
                 // Str Output theo format của jPlayer
-                $encode_source = json_encode($item->source);
-                $source        = json_decode($encode_source, true);
-                $mp3_url       = isset($source['320']) ? trim($source['320']) : trim($source['128']);
-                $str_output .= '{title:"' . trim($item->title) . '",mp3:"' . $mp3_url . '"},';
+                $str_output .= '{title:"' . trim($item['title']) . '",mp3:"' . trim($item['source']['128']) . '"},';
             }
         }
         return trim($str_output, ',');
