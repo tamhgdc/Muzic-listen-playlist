@@ -1,8 +1,12 @@
-Version 1.0
-- Create Project
-- Create Playlist
-- Create Location
+## Version 1.0
+- [x] Create Project
+- [x] Create Playlist
+- [x] Create Location
 
-Version 2.0
-- Loại bỏ các file JS tĩnh
-- Bổ sung cấu trúc Location sử dụng PHP
+## Version 2.0
+- [x] Loại bỏ các file JS tĩnh
+- [x] Bổ sung cấu trúc Location sử dụng PHP
+
+## Version 2.1
+- [x] Bổ sung thêm thư viện get nhạc từ website Zing Mp3 (lượng nhạc phong phú hơn)
+- [x] Bổ sung thêm album Đen Vâu, Vũ
