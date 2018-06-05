@@ -48,11 +48,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script type="text/javascript" src="<?php
     if (isset($current_playlist))
     {
-        echo base_url('playlist/nhaccuatui/'.trim($current_playlist));
+        echo base_url('playlist/data/'.trim($current_playlist));
     }
     else
     {
-        echo base_url('playlist/nhaccuatui/'.array_rand($list_playlist));
+        echo base_url('playlist/data/'.array_rand($list_playlist));
     }
     ?>"></script>
     <script language="javascript" type="text/javascript">
