@@ -88,9 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     ?>"></script>
     <a class="quankhuya-description" href="<?php echo base_url(); ?>" target="_blank"><?php echo $sites->site_name; ?></a>
     <div class="background-pattern"></div>
-    <div class="page-like">
-        <!-- <div class="fb-like" data-href="<?php echo base_url(); ?>" data-width="450" data-layout="box_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div> -->
-    </div>
+    <div class="page-like"></div>
 </div><!--/wrapper-->
 <div id="progress-back" class="load-item">
     <div id="progress-bar"></div>
@@ -204,9 +202,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div><!--/tất cả options của player -->
 </div>
 <div class="fanpage-like">
-    <!-- <div class="fb-like" data-href="<?php echo $canonical_url; ?>" data-send="false" data-width="80" data-show-faces="false" data-colorscheme="dark"></div> -->
     <div class="fb-like" data-href="<?php echo $canonical_url; ?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 </div><!--/fanpage-like-->
 <script type="text/javascript" src="<?php echo assets_url('statics/js/index.js?version=1.0.2'); ?>"></script>
 </body>
 </html>
+<!--
+    - A production of HungNA <dev@nguyenanhung.com>
+    - Page generation time: {elapsed_time}
+    - Memory usage: {memory_usage}
+ -->
