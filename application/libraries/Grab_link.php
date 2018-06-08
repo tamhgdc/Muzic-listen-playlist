@@ -38,7 +38,7 @@ class Grab_link
         {
             foreach ($xmlContents->track as $key => $item)
             {
-                $str_output .= '{title:"' . trim($item->title) . '",mp3:"' . trim($item->location) . '"},'; // Str Output theo format của jPlayer
+                $str_output .= '{title:"' . trim($item->title) . ' - ' . trim($item->creator) . '",mp3:"' . trim($item->location) . '"},'; // Str Output theo format của jPlayer
             }
         }
         return trim($str_output, ',');
@@ -57,7 +57,7 @@ class Grab_link
         {
             foreach ($zingMp3['data']['items'] as $key => $item)
             {
-                $str_output .= '{title:"' . trim($item['title']) . '",mp3:"' . trim($item['source']['128']) . '"},'; // Str Output theo format của jPlayer
+                $str_output .= '{title:"' . trim($item['title']) . ' - ' . trim($item['artists_names']) . '",mp3:"' . trim($item['source']['128']) . '"},'; // Str Output theo format của jPlayer
             }
         }
         return trim($str_output, ',');
