@@ -58,12 +58,10 @@ class Home extends CI_Controller
         $list_playlist    = config_item('list_playlist');
         $location_id      = trim($location_id);
         $music_id         = trim($music_id);
-        if (!array_key_exists($location_id, $list_location))
-        {
+        if (!array_key_exists($location_id, $list_location)) {
             redirect();
         }
-        if (!array_key_exists($music_id, $list_playlist))
-        {
+        if (!array_key_exists($music_id, $list_playlist)) {
             redirect();
         }
         $uriString                   = 'den-' . $location_id . '-va-nghe-nhac-' . $music_id;
@@ -81,5 +79,54 @@ class Home extends CI_Controller
         $data['current_location']    = $location_id;
         $data['current_playlist']    = $music_id;
         $this->load->view(self::TPL_FOLDER . 'page_index', $data);
+    }
+    /**
+     * Clean Cache
+     * @link /home/clean_cache.html
+     */
+    public function clean_cache()
+    {
+        $this->config->load('admin_config');
+        $auth     = config_item('authentication');
+        // API
+        $username = $this->input->get_post('username', true);
+        $password = $this->input->get_post('password', true);
+        $type     = $this->input->get_post('type', true);
+        if ($username === null || $password === null) {
+            $response = array(
+                'result' => 2,
+                'desc' => 'Sai hoặc thiếu tham số'
+            );
+        } elseif ($username != $auth['username'] || $password != $auth['password']) {
+            $response = array(
+                'result' => 3,
+                'desc' => 'Sai chữ ký xác thực'
+            );
+        } else {
+            $this->load->driver('cache', array(
+                'adapter' => 'apc',
+                'backup' => 'file'
+            ));
+            if ($type === 'info') {
+                $response = array(
+                    'result' => 0,
+                    'desc' => 'Lấy thông tin Cache',
+                    'details' => array(
+                        'info' => $this->cache->cache_info()
+                    )
+                );
+            } else {
+                $response = array(
+                    'result' => 0,
+                    'desc' => 'Xóa Cache',
+                    'details' => array(
+                        'info' => $this->cache->cache_info(),
+                        'clean' => $this->cache->clean()
+                    )
+                );
+            }
+        }
+        $this->output->set_content_type('application/json')->set_output(json_encode($response))->_display();
+        exit();
     }
 }
