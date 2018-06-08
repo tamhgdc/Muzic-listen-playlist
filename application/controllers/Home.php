@@ -21,10 +21,7 @@ class Home extends CI_Controller
             'string',
             'array'
         ));
-        $this->load->library(array(
-            'requests',
-            'grab_link'
-        ));
+        $this->load->library('grab_link');
         $this->config->load('config_site');
         $this->config->load('config_grabber');
         $this->config->load('config_player');

@@ -24,10 +24,7 @@ class Playlist extends CI_Controller
             'string',
             'array'
         ));
-        $this->load->library(array(
-            'requests',
-            'grab_link'
-        ));
+        $this->load->library('grab_link');
         $this->config->load('config_grabber');
         $this->config->load('config_player');
         $this->grabber = arrayToObject(config_item('config_grabber'));
