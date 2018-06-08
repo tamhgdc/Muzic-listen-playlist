@@ -1,6 +1,6 @@
 {
-	"description": "Project Quan Khuya MP3",
-	"name": "hung-nguyen/project-quan-khuya-mp3",
+	"description": "Project Listen to Music Playlist",
+	"name": "nguyenanhung/listen-to-music-playlist",
 	"type": "project",
 	"license": "GPL-3.0",
 	"homepage": "https://mp3.nguyenanhung.com",
@@ -11,7 +11,6 @@
 		}],
 	"require": {
 		"monolog/monolog": "^1.23",
-		"curl/curl": "^1.9",
-		"cocur/slugify": "^3.1"
+		"curl/curl": "^1.9"
 	}
 }

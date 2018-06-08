@@ -21,7 +21,6 @@ class Grab_link
             'string',
             'array'
         ));
-        $this->CI->load->library('requests');
         $this->CI->config->load('config_grabber');
         $this->grabber = arrayToObject(config_item('config_grabber'));
     }
