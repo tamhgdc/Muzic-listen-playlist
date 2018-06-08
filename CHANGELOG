@@ -14,3 +14,7 @@
 ## Version 1.0.1
 - [x] Remove 1 số package không sử dụng
 - [x] Move send Request into Grab link library
+
+## Version 1.0.2
+- [x] Bổ sung tên ca sĩ vào Playlist
+- [x] Bổ sung hàm xóa cache
