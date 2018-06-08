@@ -1,12 +1,16 @@
-## Version 1.0
+## Version 0.5
 - [x] Create Project
 - [x] Create Playlist
 - [x] Create Location
 
-## Version 2.0
+## Version 0.9
 - [x] Loại bỏ các file JS tĩnh
 - [x] Bổ sung cấu trúc Location sử dụng PHP
 
-## Version 2.1
+## Version 1.0
 - [x] Bổ sung thêm thư viện get nhạc từ website Zing Mp3 (lượng nhạc phong phú hơn)
 - [x] Bổ sung thêm album Đen Vâu, Vũ
+
+## Version 1.0.1
+- [x] Remove 1 số package không sử dụng
+- [x] Move send Request into Grab link library

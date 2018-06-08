@@ -2,7 +2,7 @@
 
 Project trang nhạc Playlist nghe theo gu
 
-Grab nhạc từ các trang nhaccuatui.com, keeng.vn, mp3.zing.vn
+Grab nhạc từ các trang Nhạc của tui, Zing Mp3
 
 Tạo thành những link chia sẻ nhạc theo GU 1 cách dễ dàng và thuận tiện
 
