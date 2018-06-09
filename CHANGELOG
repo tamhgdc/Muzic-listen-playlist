@@ -29,3 +29,6 @@
 - [x] Bổ sung thêm Background: Hot Girl
 - [x] Bổ sung thuật toán tự map link ảnh từ folder trong host qua directory_map, đồng thời hỗ rợ khai báo List Image từ host ngoài
 
+## Version 1.0.5
+- [x] Thêm module Sitemap, List ra toàn bộ link nhạc available
+- [x] Thêm file robots.txt hỗ trợ cho SEO
