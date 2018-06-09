@@ -6,314 +6,112 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * Date: 6/2/18
  * Time: 02:36
  */
-// Location Data
+/**
+ * Location Data
+ * name: Tên Location
+ * self_host: Tự map ảnh trong thư mục quy định trong biến self_host_folder, false = Map trong array list_images
+ * self_host_folder: Đường dẫn đến thư mục
+ * list_images: Mảng chứa link ảnh ở host ngoài
+ */
 $config['list_location']    = array(
     'thien-duong' => array(
         'name' => 'Thiên đường',
-        'images' => array(
-            base_url('assets/background/thien-duong/slide31.jpg'),
-            base_url('assets/background/thien-duong/slide32.jpg'),
-            base_url('assets/background/thien-duong/slide33.jpg'),
-            base_url('assets/background/thien-duong/slide34.jpg'),
-            base_url('assets/background/thien-duong/slide35.jpg'),
-            base_url('assets/background/thien-duong/slide36.jpg'),
-            base_url('assets/background/thien-duong/slide37.jpg'),
-            base_url('assets/background/thien-duong/slide38.jpg'),
-            base_url('assets/background/thien-duong/slide39.jpg'),
-            base_url('assets/background/thien-duong/slide40.jpg'),
-            base_url('assets/background/thien-duong/slide41.jpg'),
-            base_url('assets/background/thien-duong/slide42.jpg'),
-            base_url('assets/background/thien-duong/slide43.jpg'),
-            base_url('assets/background/thien-duong/slide44.jpg'),
-            base_url('assets/background/thien-duong/slide45.jpg'),
-            base_url('assets/background/thien-duong/slide46.jpg'),
-            base_url('assets/background/thien-duong/slide47.jpg'),
-            base_url('assets/background/thien-duong/slide48.jpg'),
-            base_url('assets/background/thien-duong/slide49.jpg'),
-            base_url('assets/background/thien-duong/slide50.jpg'),
-            base_url('assets/background/thien-duong/slide51.jpg'),
-            base_url('assets/background/thien-duong/slide52.jpg'),
-            base_url('assets/background/thien-duong/slide53.jpg'),
-            base_url('assets/background/thien-duong/slide54.jpg'),
-            base_url('assets/background/thien-duong/slide55.jpg'),
-            base_url('assets/background/thien-duong/slide56.jpg'),
-            base_url('assets/background/thien-duong/slide57.jpg'),
-            base_url('assets/background/thien-duong/slide58.jpg'),
-            base_url('assets/background/thien-duong/slide59.jpg'),
-            base_url('assets/background/thien-duong/slide60.jpg'),
-            base_url('assets/background/thien-duong/slide61.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/thien-duong/',
+        'list_images' => array()
     ),
     'doi-nui' => array(
         'name' => 'Đồi núi',
-        'images' => array(
-            base_url('assets/background/doi-nui/nui1.gif'),
-            base_url('assets/background/doi-nui/nui2.gif'),
-            base_url('assets/background/doi-nui/nui3.gif'),
-            base_url('assets/background/doi-nui/nui4.gif'),
-            base_url('assets/background/doi-nui/nui5.gif'),
-            base_url('assets/background/doi-nui/nui6.gif'),
-            base_url('assets/background/doi-nui/nui7.gif'),
-            base_url('assets/background/doi-nui/nui8.gif')
-        ),
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/doi-nui/',
+        'list_images' => array(),
         'media_files' => base_url('assets/media/tieng-nuoc-chay.mp3')
     ),
     'song-suoi' => array(
         'name' => 'Sông suối',
-        'images' => array(
-            base_url('assets/background/song-suoi/slide62.jpg'),
-            base_url('assets/background/song-suoi/slide63.jpg'),
-            base_url('assets/background/song-suoi/slide64.jpg'),
-            base_url('assets/background/song-suoi/slide65.jpg'),
-            base_url('assets/background/song-suoi/slide66.jpg'),
-            base_url('assets/background/song-suoi/slide67.jpg'),
-            base_url('assets/background/song-suoi/slide68.jpg'),
-            base_url('assets/background/song-suoi/slide69.jpg'),
-            base_url('assets/background/song-suoi/slide70.jpg'),
-            base_url('assets/background/song-suoi/slide71.jpg'),
-            base_url('assets/background/song-suoi/slide72.jpg'),
-            base_url('assets/background/song-suoi/slide73.jpg'),
-            base_url('assets/background/song-suoi/slide74.jpg'),
-            base_url('assets/background/song-suoi/slide75.jpg'),
-            base_url('assets/background/song-suoi/slide76.jpg'),
-            base_url('assets/background/song-suoi/slide77.jpg'),
-            base_url('assets/background/song-suoi/slide78.jpg'),
-            base_url('assets/background/song-suoi/slide79.jpg'),
-            base_url('assets/background/song-suoi/slide80.jpg'),
-            base_url('assets/background/song-suoi/slide81.jpg'),
-            base_url('assets/background/song-suoi/slide82.jpg'),
-            base_url('assets/background/song-suoi/slide83.jpg'),
-            base_url('assets/background/song-suoi/slide84.jpg'),
-            base_url('assets/background/song-suoi/slide85.jpg'),
-            base_url('assets/background/song-suoi/slide86.jpg'),
-            base_url('assets/background/song-suoi/slide87.jpg'),
-            base_url('assets/background/song-suoi/slide88.jpg'),
-            base_url('assets/background/song-suoi/slide89.jpg'),
-            base_url('assets/background/song-suoi/slide90.jpg'),
-            base_url('assets/background/song-suoi/slide91.jpg')
-        ),
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/song-suoi/',
+        'list_images' => array(),
         'media_files' => base_url('assets/media/tieng-nuoc-chay.mp3')
     ),
     'khong-gian-bien' => array(
         'name' => 'Không gian biển',
-        'images' => array(
-            base_url('assets/background/khong-gian-bien/bien1.gif'),
-            base_url('assets/background/khong-gian-bien/bien2.gif'),
-            base_url('assets/background/khong-gian-bien/bien3.gif'),
-            base_url('assets/background/khong-gian-bien/bien4.gif'),
-            base_url('assets/background/khong-gian-bien/bien5.gif'),
-            base_url('assets/background/khong-gian-bien/bien6.gif')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/khong-gian-bien/',
+        'list_images' => array()
     ),
     'khong-gian-mua' => array(
         'name' => 'Không gian mưa',
-        'images' => array(
-            base_url('assets/background/khong-gian-mua/mua1.gif'),
-            base_url('assets/background/khong-gian-mua/mua2.gif'),
-            base_url('assets/background/khong-gian-mua/mua3.gif'),
-            base_url('assets/background/khong-gian-mua/mua4.gif'),
-            base_url('assets/background/khong-gian-mua/mua5.gif'),
-            base_url('assets/background/khong-gian-mua/mua6.gif'),
-            base_url('assets/background/khong-gian-mua/mua7.gif'),
-            base_url('assets/background/khong-gian-mua/mua8.gif'),
-            base_url('assets/background/khong-gian-mua/mua9.gif'),
-            base_url('assets/background/khong-gian-mua/mua10.gif'),
-            base_url('assets/background/khong-gian-mua/mua11.gif'),
-            base_url('assets/background/khong-gian-mua/mua12.gif'),
-            base_url('assets/background/khong-gian-mua/mua13.gif'),
-            base_url('assets/background/khong-gian-mua/mua14.gif')
-        ),
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/khong-gian-mua/',
+        'list_images' => array(),
         'media_files' => base_url('assets/media/tieng-mua-roi.mp3')
     ),
     'khong-gian-rung' => array(
         'name' => 'Không gian rừng',
-        'images' => array(
-            base_url('assets/background/khong-gian-rung/slide1.jpg'),
-            base_url('assets/background/khong-gian-rung/slide2.jpg'),
-            base_url('assets/background/khong-gian-rung/slide3.jpg'),
-            base_url('assets/background/khong-gian-rung/slide4.jpg'),
-            base_url('assets/background/khong-gian-rung/slide5.jpg'),
-            base_url('assets/background/khong-gian-rung/slide6.jpg'),
-            base_url('assets/background/khong-gian-rung/slide7.jpg'),
-            base_url('assets/background/khong-gian-rung/slide8.jpg'),
-            base_url('assets/background/khong-gian-rung/slide9.jpg'),
-            base_url('assets/background/khong-gian-rung/slide10.jpg'),
-            base_url('assets/background/khong-gian-rung/slide11.jpg'),
-            base_url('assets/background/khong-gian-rung/slide12.jpg'),
-            base_url('assets/background/khong-gian-rung/slide13.jpg'),
-            base_url('assets/background/khong-gian-rung/slide14.jpg'),
-            base_url('assets/background/khong-gian-rung/slide15.jpg'),
-            base_url('assets/background/khong-gian-rung/slide16.jpg'),
-            base_url('assets/background/khong-gian-rung/slide17.jpg'),
-            base_url('assets/background/khong-gian-rung/slide18.jpg'),
-            base_url('assets/background/khong-gian-rung/slide19.jpg'),
-            base_url('assets/background/khong-gian-rung/slide20.jpg'),
-            base_url('assets/background/khong-gian-rung/slide21.jpg'),
-            base_url('assets/background/khong-gian-rung/slide22.jpg'),
-            base_url('assets/background/khong-gian-rung/slide23.jpg'),
-            base_url('assets/background/khong-gian-rung/slide24.jpg'),
-            base_url('assets/background/khong-gian-rung/slide25.jpg'),
-            base_url('assets/background/khong-gian-rung/slide26.jpg'),
-            base_url('assets/background/khong-gian-rung/slide27.jpg'),
-            base_url('assets/background/khong-gian-rung/slide28.jpg'),
-            base_url('assets/background/khong-gian-rung/slide29.jpg'),
-            base_url('assets/background/khong-gian-rung/slide30.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/khong-gian-rung/',
+        'list_images' => array()
     ),
     'viet-nam' => array(
         'name' => 'Việt Nam',
-        'images' => array(
-            base_url('assets/background/viet-nam/vietnam1.jpg'),
-            base_url('assets/background/viet-nam/vietnam1.jpg'),
-            base_url('assets/background/viet-nam/vietnam2.jpeg'),
-            base_url('assets/background/viet-nam/vietnam3.jpg'),
-            base_url('assets/background/viet-nam/vietnam4.jpg'),
-            base_url('assets/background/viet-nam/vietnam5.jpg'),
-            base_url('assets/background/viet-nam/vietnam6.jpg'),
-            base_url('assets/background/viet-nam/vietnam7.jpg'),
-            base_url('assets/background/viet-nam/vietnam8.JPG'),
-            base_url('assets/background/viet-nam/vietnam9.jpg'),
-            base_url('assets/background/viet-nam/vietnam10.jpg'),
-            base_url('assets/background/viet-nam/vietnam11.jpg'),
-            base_url('assets/background/viet-nam/vietnam12.jpg'),
-            base_url('assets/background/viet-nam/vietnam13.jpg'),
-            base_url('assets/background/viet-nam/vietnam14.jpg'),
-            base_url('assets/background/viet-nam/vietnam15.jpg'),
-            base_url('assets/background/viet-nam/vietnam16.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/viet-nam/',
+        'list_images' => array()
     ),
     'ha-noi' => array(
         'name' => 'Hà Nội',
-        'images' => array(
-            base_url('assets/background/ha-noi/hanoi1.jpg'),
-            base_url('assets/background/ha-noi/hanoi2.jpg'),
-            base_url('assets/background/ha-noi/hanoi3.jpg'),
-            base_url('assets/background/ha-noi/hanoi4.jpg'),
-            base_url('assets/background/ha-noi/hanoi5.jpg'),
-            base_url('assets/background/ha-noi/hanoi6.jpg'),
-            base_url('assets/background/ha-noi/hanoi7.jpg'),
-            base_url('assets/background/ha-noi/hanoi8.jpg'),
-            base_url('assets/background/ha-noi/hanoi9.jpg'),
-            base_url('assets/background/ha-noi/hanoi10.jpg'),
-            base_url('assets/background/ha-noi/hanoi11.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/ha-noi/',
+        'list_images' => array()
     ),
     'anh-quoc' => array(
         'name' => 'Anh quốc',
-        'images' => array(
-            base_url('assets/background/anh-quoc/anh1.jpg'),
-            base_url('assets/background/anh-quoc/anh2.jpg'),
-            base_url('assets/background/anh-quoc/anh3.jpg'),
-            base_url('assets/background/anh-quoc/anh4.jpg'),
-            base_url('assets/background/anh-quoc/anh5.jpg'),
-            base_url('assets/background/anh-quoc/anh6.jpg'),
-            base_url('assets/background/anh-quoc/anh7.jpg'),
-            base_url('assets/background/anh-quoc/anh8.jpg'),
-            base_url('assets/background/anh-quoc/anh9.jpg'),
-            base_url('assets/background/anh-quoc/anh10.jpg'),
-            base_url('assets/background/anh-quoc/anh11.jpg'),
-            base_url('assets/background/anh-quoc/anh12.jpg'),
-            base_url('assets/background/anh-quoc/anh13.jpg'),
-            base_url('assets/background/anh-quoc/anh14.jpg'),
-            base_url('assets/background/anh-quoc/anh15.jpg'),
-            base_url('assets/background/anh-quoc/anh16.jpg'),
-            base_url('assets/background/anh-quoc/anh17.jpg'),
-            base_url('assets/background/anh-quoc/anh18.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/anh-quoc/',
+        'list_images' => array()
     ),
     'wakanda-forever' => array(
         'name' => 'Wakanda',
-        'images' => array(
-            base_url('assets/background/wakanda/wakanda-01.png'),
-            base_url('assets/background/wakanda/wakanda-02.jpg'),
-            base_url('assets/background/wakanda/wakanda-03.jpg'),
-            base_url('assets/background/wakanda/wakanda-04.jpg'),
-            base_url('assets/background/wakanda/wakanda-05.jpg'),
-            base_url('assets/background/wakanda/wakanda-06.jpg'),
-            base_url('assets/background/wakanda/wakanda-07.jpg'),
-            base_url('assets/background/wakanda/wakanda-08.jpg'),
-            base_url('assets/background/wakanda/wakanda-09.jpg'),
-            base_url('assets/background/wakanda/wakanda-10.jpg'),
-            base_url('assets/background/wakanda/wakanda-11.jpg'),
-            base_url('assets/background/wakanda/wakanda-12.jpg'),
-            base_url('assets/background/wakanda/wakanda-13.jpg'),
-            base_url('assets/background/wakanda/wakanda-14.jpg'),
-            base_url('assets/background/wakanda/wakanda-15.jpg'),
-            base_url('assets/background/wakanda/wakanda-16.jpg'),
-            base_url('assets/background/wakanda/wakanda-17.jpg'),
-            base_url('assets/background/wakanda/wakanda-18.jpg'),
-            base_url('assets/background/wakanda/wakanda-19.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/wakanda/',
+        'list_images' => array()
     ),
     'paris' => array(
         'name' => 'Paris',
-        'images' => array(
-            base_url('assets/background/paris/paris1.jpg'),
-            base_url('assets/background/paris/paris2.jpg'),
-            base_url('assets/background/paris/paris3.jpg'),
-            base_url('assets/background/paris/paris4.jpg'),
-            base_url('assets/background/paris/paris5.jpg'),
-            base_url('assets/background/paris/paris6.jpg'),
-            base_url('assets/background/paris/paris7.jpg'),
-            base_url('assets/background/paris/paris8.jpg'),
-            base_url('assets/background/paris/paris9.jpg'),
-            base_url('assets/background/paris/paris10.jpg'),
-            base_url('assets/background/paris/paris11.jpg'),
-            base_url('assets/background/paris/paris12.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/paris/',
+        'list_images' => array()
     ),
     'party' => array(
         'name' => 'Party',
-        'images' => array(
-            base_url('assets/background/party/party1.jpg'),
-            base_url('assets/background/party/party2.jpg'),
-            base_url('assets/background/party/party3.jpg'),
-            base_url('assets/background/party/party4.jpg'),
-            base_url('assets/background/party/party5.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/party/',
+        'list_images' => array()
+    ),
+    'hot-girl' => array(
+        'name' => 'Hot Girl',
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/hot-girl/',
+        'list_images' => array()
     ),
     'final-fantasy' => array(
         'name' => 'Fantasy',
-        'images' => array(
-            base_url('assets/background/final-fantasy/ffx1.jpg'),
-            base_url('assets/background/final-fantasy/ffx2.jpg'),
-            base_url('assets/background/final-fantasy/ffx3.jpg'),
-            base_url('assets/background/final-fantasy/ffx4.jpg'),
-            base_url('assets/background/final-fantasy/ffx5.jpg'),
-            base_url('assets/background/final-fantasy/ffx6.jpg'),
-            base_url('assets/background/final-fantasy/ffx7.jpg'),
-            base_url('assets/background/final-fantasy/ffx8.jpg'),
-            base_url('assets/background/final-fantasy/ffx9.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/final-fantasy/',
+        'list_images' => array()
     ),
     'middle-earth' => array(
         'name' => 'Middle Earth',
-        'images' => array(
-            base_url('assets/background/middle-earth/LOTR1.jpg'),
-            base_url('assets/background/middle-earth/LOTR2.jpg'),
-            base_url('assets/background/middle-earth/LOTR3.jpg'),
-            base_url('assets/background/middle-earth/LOTR4.jpg'),
-            base_url('assets/background/middle-earth/LOTR5.jpg'),
-            base_url('assets/background/middle-earth/LOTR6.jpg'),
-            base_url('assets/background/middle-earth/LOTR7.jpg'),
-            base_url('assets/background/middle-earth/LOTR8.jpg'),
-            base_url('assets/background/middle-earth/LOTR9.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/middle-earth/',
+        'list_images' => array()
     ),
     'vung-dat-ghibli-huyen-thoai' => array(
         'name' => 'Vùng đất Ghibli',
-        'images' => array(
-            base_url('assets/background/ghibli/ghibli1.jpg'),
-            base_url('assets/background/ghibli/ghibli2.jpg'),
-            base_url('assets/background/ghibli/ghibli3.jpg'),
-            base_url('assets/background/ghibli/ghibli4.jpg'),
-            base_url('assets/background/ghibli/ghibli5.jpg'),
-            base_url('assets/background/ghibli/ghibli6.jpg'),
-            base_url('assets/background/ghibli/ghibli7.jpg'),
-            base_url('assets/background/ghibli/ghibli8.jpg'),
-            base_url('assets/background/ghibli/ghibli9.jpg'),
-            base_url('assets/background/ghibli/ghibli10.jpg')
-        )
+        'self_host' => true,
+        'self_host_folder' => 'assets/background/ghibli/',
+        'list_images' => array()
     )
 );
 $config['list_location_id'] = array(

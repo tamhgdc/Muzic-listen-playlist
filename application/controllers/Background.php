@@ -18,7 +18,8 @@ class Background extends CI_Controller
         $this->load->helper(array(
             'url',
             'string',
-            'array'
+            'array',
+            'directory'
         ));
         $this->config->load('config_player');
     }
@@ -36,7 +37,8 @@ class Background extends CI_Controller
         if (array_key_exists($location_id, $list_location))
         {
             $item_location         = $list_location[$location_id];
-            $data['location_data'] = isset($item_location['images']) ? self::_parse_data($item_location['name'], $item_location['images']) : null;
+            $list_images           = isset($item_location['self_host_folder']) ? directory_map(FCPATH . trim($item_location['self_host_folder'])) : $item_location['list_images'];
+            $data['location_data'] = is_array($list_images) ? self::_parse_data($item_location['name'], $list_images, $item_location['self_host'], $item_location['self_host_folder']) : null;
         }
         else
         {
@@ -45,12 +47,14 @@ class Background extends CI_Controller
         $this->load->view(self::TPL_FOLDER . 'background', $data);
     }
     /**
-     * Parse Array to Data JS
+     * Parse Data Image into JS File
      * @param string $title
      * @param array $arr_data
+     * @param bool $self_host
+     * @param string $self_host_folder
      * @return null|string
      */
-    private function _parse_data($title = 'IMG', $arr_data = array())
+    private function _parse_data($title = 'IMG', $arr_data = array(), $self_host = false, $self_host_folder = '')
     {
         if (!is_array($arr_data))
         {
@@ -59,7 +63,14 @@ class Background extends CI_Controller
         $result = '';
         foreach ($arr_data as $key => $item)
         {
-            $result .= '{image: "' . trim($item) . '",title: "' . trim($title) . ' ' . ($key + 1) . '",thumb: "' . trim($item) . '",url: ""},';
+            if ($self_host === true)
+            {
+                $result .= '{image: "' . base_url($self_host_folder . trim($item)) . '",title: "' . trim($title) . ' ' . ($key + 1) . '",thumb: "' . base_url($self_host_folder . trim($item)) . '",url: ""},';
+            }
+            else
+            {
+                $result .= '{image: "' . trim($item) . '",title: "' . trim($title) . ' ' . ($key + 1) . '",thumb: "' . trim($item) . '",url: ""},';
+            }
         }
         return trim($result, ',');
     }
