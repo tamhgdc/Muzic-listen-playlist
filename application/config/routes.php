@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller']             = 'home/index';
 $route['index']                          = 'home/index';
 $route['musics']                         = 'home/index';
+$route['sitemap.xml']                    = 'home/sitemap';
 $route['den-(:any)-va-nghe-nhac-(:any)'] = 'home/playlist/$1/$2';
 $route['404_override']                   = '';
 $route['translate_uri_dashes']           = FALSE;
