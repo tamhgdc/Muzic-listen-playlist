@@ -441,6 +441,45 @@ $config['list_playlist']    = array(
             "7aede3e862fc57bde329dbd702eca483"
         )
     ),
+    'my-tam' => array(
+        'name' => 'Mỹ Tâm',
+        'from_source' => 'nhaccuatui',
+        'playlist' => array(
+            'ed86e6f676ecff95d924a58c16ccb78c'
+        )
+    ),
+    'huong-tram' => array(
+        'name' => 'Hương Tràm',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'kmcmykmNBcSVWJxtHTFHLHykWbcpahkiz'
+        )
+    ),
+    'le-quyen' => array(
+        'name' => 'Lệ Quyên',
+        'from_source' => 'nhaccuatui',
+        'playlist' => array(
+            '685e72a5b3976e3907e028b9b7ec23a0'
+        )
+    ),
+    'thuy-chi' => array(
+        'name' => 'Thùy Chi',
+        'from_source' => 'nhaccuatui',
+        'playlist' => array(
+            "4e6b0a0861a086c1a860022fc5627aa0",
+            "f2c044c19393f041572a9c4624b79309",
+            "696f4974bded068cca495dda4ebd2e5f",
+            "50c7e9fcec17bf00e4c4615a52139b9d",
+            "a8c96a1e73309cee53684b9ef8ff2a13",
+            "efc5e88129d2056a807c6c1d485ec524",
+            "6072146995f681cb18591fbc2177e75a",
+            "d46b48f18523c346b2b8b4564cdcbdcb",
+            "87213eedd463337d4f5304fa8587c6b3",
+            "4b92931b7f5c8daf20d7a13131c33bc9",
+            "7d9a6b95e409cf215a8c853b4d29a77d",
+            "ea21cb53ac8a5efc53c4026371263c24"
+        )
+    ),
     'bui-anh-tuan' => array(
         'name' => 'Bùi Anh Tuấn',
         'from_source' => 'nhaccuatui',
@@ -556,24 +595,6 @@ $config['list_playlist']    = array(
             "8de60f8377a44011a573aeb77dd2d19b",
             "e6357856732020c18c4021458ff739f1",
             "80c9b584f35480a16d0b9e3215510d7b"
-        )
-    ),
-    'thuy-chi' => array(
-        'name' => 'Thùy Chi',
-        'from_source' => 'nhaccuatui',
-        'playlist' => array(
-            "4e6b0a0861a086c1a860022fc5627aa0",
-            "f2c044c19393f041572a9c4624b79309",
-            "696f4974bded068cca495dda4ebd2e5f",
-            "50c7e9fcec17bf00e4c4615a52139b9d",
-            "a8c96a1e73309cee53684b9ef8ff2a13",
-            "efc5e88129d2056a807c6c1d485ec524",
-            "6072146995f681cb18591fbc2177e75a",
-            "d46b48f18523c346b2b8b4564cdcbdcb",
-            "87213eedd463337d4f5304fa8587c6b3",
-            "4b92931b7f5c8daf20d7a13131c33bc9",
-            "7d9a6b95e409cf215a8c853b4d29a77d",
-            "ea21cb53ac8a5efc53c4026371263c24"
         )
     ),
     'tuan-hung' => array(
@@ -765,13 +786,6 @@ $config['list_playlist']    = array(
             '7f2e3f745a11aa456c634fcdbebb362a'
         )
     ),
-    'le-quyen' => array(
-        'name' => 'Lệ Quyên',
-        'from_source' => 'nhaccuatui',
-        'playlist' => array(
-            '685e72a5b3976e3907e028b9b7ec23a0'
-        )
-    ),
     'den-vau' => array(
         'name' => 'Đen Vâu',
         'from_source' => 'zing_mp3',
@@ -807,6 +821,35 @@ $config['list_playlist']    = array(
             "510f97afecae554e54c939de3f8b4499"
         )
     ),
+    'rhymastic' => array(
+        'name' => 'Rhymastic',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'kHxmyLHEmiakSdZTmtDHLHyLWbxpaFDik',
+            'LHJGtZHikpaJzWRyGtvnkmTkQFxQNhvlD',
+            'LmcmykHiLWGEzLHTmtbHLHTLpDcQNhFBJ',
+            'kmcGtZnEsncJigdtntFHkHykpbxQNhFbu',
+            'kGcHtLmsdRddmuvymyvHLmyZQDcQXaFHX',
+            'ZHcHtZGEmdRQzJJtHtbGZHtLWFcQNhbFd',
+            'kncmtLnxRsaCbmWtmTbmkHyZQFxQNmpnQ'
+        )
+    ),
+    'binz' => array(
+        'name' => 'Binz',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'ZnJHtkHadikDNDhtHyvGZGtkQDcpabsLH'
+        )
+    ),
+    'andree-right-hand' => array(
+        'name' => 'Andree Right Hand',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'ZGxmyLmNdaNikzFyHtFHZHtkQvcQNhdik',
+            'ZHJmtZHaBNaaZRVtHtFnLHyZpFJpaQZVz',
+            'kncnTZmaBaaRZdiymyvHLmTZpDxWaCBcs'
+        )
+    ),
     'young-uno' => array(
         'name' => 'Young Uno',
         'from_source' => 'nhaccuatui',
@@ -823,6 +866,70 @@ $config['list_playlist']    = array(
             "83135725c9556e44390811ab8f252d95",
             "b763c42d472c03ab44c4139f8998f0d7",
             "faa988d4b2332c959e8640602539b2f8"
+        )
+    ),
+    'jaykii' => array(
+        'name' => 'JayKii',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'ZHJmyLHRsSLiLdxyHyFnkHykpFxWsFkZa',
+            'kHcHyZniCZLCmgzyGybHLntLQFcWgJvHh',
+            'kHJmTLmEHRlEaFkTmtFGkGykWFJpaHLcs',
+            'LmxGTknRWizWWshtGtbGZHyZpvJWgEExW',
+            'kmJHtLmiZQJnNnkyHtvmZHyZQbJWCNNHs',
+            'LHcHtLHihVZkbSdyGyFHkmtLWFJWNWpgA'
+        )
+    ),
+    'erik' => array(
+        'name' => 'ERIK',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'LHxmtLHEGQhGzFByHyDnLGyLWvcpNVmCD'
+        )
+    ),
+    'masew' => array(
+        'name' => 'Masew',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'ZmcmTZnukWshLCbymyFnkmyZWvcWaQazi'
+        )
+    ),
+    'dat-g' => array(
+        'name' => 'Đạt G',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'kHxnykHRXxHukHstmyDGkmykpFJWNhnGD'
+        )
+    ),
+    'only-c' => array(
+        'name' => 'OnlyC',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'kHcmTZHsdsaEkcZyHybHkmykWDJpaSska',
+            'LGcHyLHiNEWJkGhyGyDHkHtkpvxQCXhmZ'
+        )
+    ),
+    'soobin-hoang-son' => array(
+        'name' => 'Soobin Hoàng Sơn',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'ZHxHyLmJEZaxHQJymybmkmykpbJQsQJHz',
+            'LmJGTLHNBJzhcsVynyFHLmykQFxpCNkHW',
+            'ZHcGyZGaBcZVakhtHyFHZHTLWFJWaWJZD'
+        )
+    ),
+    'chi-dan' => array(
+        'name' => 'Chi Dân',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'ZHJmtkHaBcdRcHhtGtFHLmykpvcQCRWhW',
+            'kHJmykHaVxRhLguymybmLntLWbxpaWiGi',
+            'kHcmtZHRQuHASsJymTbHkmTZWFJphpzzs',
+            'LmxnTZHadxpWdBdtHyFHZntLQvcWNWRZp',
+            'ZmJHyZHaBRdhNSJyntFmZHyZQbxQNpRLs',
+            'LmcmtZHaBRHJSkEtHtFmkHtLpFcQhWQui',
+            'kHxmyknsVJHJxJQyGtFHLGyZWDJpNWxRC',
+            'LGcGyLGaBxxdXbRTHyFmZmykpbJWhJcdG'
         )
     ),
     'khac-viet' => array(
@@ -916,6 +1023,23 @@ $config['list_playlist']    = array(
             "9b8ad63af1e0c8d4c7fa6cfee5df7939"
         )
     ),
+    'nguyen-phi-hung' => array(
+        'name' => 'Nguyễn Phi Hùng',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            "kHxHTLmaBNizapiTGtFnLGtLpFcpahhzh",
+            "LGcmyZHsBacpmkAynybHLHTZWFJphxiNJ"
+        )
+    ),
+    'akira-phan' => array(
+        'name' => 'Akira Phan',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            "kHcGtkGNBsCBaNRtntvHLHTkpbJQNQpQL",
+            "ZmxHtkHaVNzFNpaTmTbmkntLWFxWskEmd",
+            "LmJGykHNdazkizxTntFHkHyLpbxQsCsxx"
+        )
+    ),
     'quang-le' => array(
         'name' => 'Quang Lê',
         'from_source' => 'nhaccuatui',
@@ -999,6 +1123,54 @@ $config['list_playlist']    = array(
             "2601d00a827db3b68bdf6a86765fb71c"
         )
     ),
+    'charlie-puth' => array(
+        'name' => 'Charlie Puth',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            "LmJGtZHxxidvJlzyntFHZnyLpFJQadWLZ",
+            "LmcnTZnRgxlWkFBymtDnLHtLQFcpCEmkR",
+            "LmxntLmadiHxCAxymyDHZHTkpvcQNzpxR"
+        )
+    ),
+    'ed-sheeran' => array(
+        'name' => 'Ed Sheeran',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'kGxmtZmNdJNNzNLtGtvHLHyLQFcWsWLFd',
+            'LGxHtLGJiQihuputmTvHZGtZWFxpNnRxn'
+        )
+    ),
+    'martin-garrix' => array(
+        'name' => 'Martin Garrix',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'kmcmyLnJRNkBlLstHyDmLHtkpFcQgNuad',
+            'ZmxnyZHuZpxdFmhymTFHLnyLWFcpCaWhi',
+            'kmJGTLGsdRFDnkvyHybHLmtLpFxWNbikk'
+        )
+    ),
+    'shayne-ward' => array(
+        'name' => 'Shayne Ward',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'ZGJHykHNdNWnGJztGybHZntZQbJQNpVHp',
+            'ZmcmyLmadaWHmJCtmyDnLmyLQbJpsWVNd',
+            'LHxmyZmaBumsmbLtGTFnLHyZQFxWNQdHD',
+            'ZHxHyLmaBaRGHkdyHtDHkmTkQbJQNQVHm',
+            'kmcHtZHNBaWnmcpTntvnkHyZQFxQXNaFk',
+            'ZmcmykmadcAhzgFyGtvnZGtLQbcpXabaL'
+        )
+    ),
+    'maroon-5' => array(
+        'name' => 'Maroon 5',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            "LHxGykHNBsidbWsTmtFnZHykWbJWaSCac",
+            "ZnJGyZHRkQxGZRdtnTFHkHtZWbcWazgJH",
+            "kHcHykmaBJczNJctGyFmZmykWFJWNlhcd",
+            "LnxmykmaVNidLRVyGTbmLmyLpFJWNzgcC"
+        )
+    ),
     'taylor-swift' => array(
         'name' => 'Taylor Swift',
         'from_source' => 'nhaccuatui',
@@ -1008,6 +1180,23 @@ $config['list_playlist']    = array(
             "3d211ef88ae634299ec848a90cfb2115",
             "573f5ea604ce05088bc7384151d801c4",
             "60c409f7d292be6b8a6af96150745a64"
+        )
+    ),
+    'katy-perry' => array(
+        'name' => 'Katy Perry',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'LmxnyZGsBaEmuSByGyDmZGykpbcpazxAR',
+            'LmcHtLnsBsNsSxayHyvnZGtZWvxpazczx',
+            'LnJntLHNdNcScbByGtDmkmtLQFcQsAiHb',
+            'kmJGTkmsdNSvZcETGTbnLnyLQFcQaScEu',
+            'kmJGyLHinaWadustmyFmLGtZpFJQszxSk',
+            'kmxGtLHadcpLvcBynybGLHykQbJQNSxSG',
+            'LHJHTkmRkpCpWmHTnyFGZGTLWFJQaSxdu',
+            'ZmxmyZnadsSFvNGymyDmZnTkpDcWNlcJJ',
+            'kGcHtZmaVNpcWQNymybHkHtLQvcpNzJgm',
+            'ZHcmyLGadaWgbaayGyFmZmyZQbcpNzJNZ',
+            'ZHxHTknNBaQHLmztmyFnZmTkpbxpsVbhk'
         )
     ),
     'bruno-mars' => array(
@@ -1025,6 +1214,20 @@ $config['list_playlist']    = array(
         'playlist' => array(
             "22e8b3000dc2931e33a657bb560b62b0",
             "079e068121331299f50b6817497bca8e"
+        )
+    ),
+    'whitney-houston' => array(
+        'name' => 'Whitney Houston',
+        'from_source' => 'nhaccuatui',
+        'playlist' => array(
+            "3d884b36be67944560dc62848744ee00",
+            "26907b5e10e62d5362e0e26b9c681f5f",
+            "f95e7827ff6ab03c05242f1ac52241f6",
+            "05faf52db91798105cb42e21fd2bff59",
+            "5fda46cc227b2c9ef3182094412a19c7",
+            "424774c28be4ce8708ecc98bbadd0c65",
+            "5bfd66b83b175d353ca7313d4d695796",
+            "45bbd616783045bb39c323cd3d61a44d"
         )
     ),
     'mariah-carey' => array(
@@ -1097,20 +1300,6 @@ $config['list_playlist']    = array(
             "b4b7014b565f3c852ef8711cdc8d7a6a",
             "672f2ec9dcf78e3ce9b6e572f0fe7559",
             "329957c585c0b8969304764d00b036eb"
-        )
-    ),
-    'whitney-houston' => array(
-        'name' => 'Whitney Houston',
-        'from_source' => 'nhaccuatui',
-        'playlist' => array(
-            "3d884b36be67944560dc62848744ee00",
-            "26907b5e10e62d5362e0e26b9c681f5f",
-            "f95e7827ff6ab03c05242f1ac52241f6",
-            "05faf52db91798105cb42e21fd2bff59",
-            "5fda46cc227b2c9ef3182094412a19c7",
-            "424774c28be4ce8708ecc98bbadd0c65",
-            "5bfd66b83b175d353ca7313d4d695796",
-            "45bbd616783045bb39c323cd3d61a44d"
         )
     ),
     'jay-chou' => array(
