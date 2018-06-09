@@ -126,6 +126,7 @@ $config['list_location_id'] = array(
     'anh-quoc',
     'paris',
     'party',
+    'hot-girl',
     'final-fantasy',
     'middle-earth',
     'vung-dat-ghibli-huyen-thoai'

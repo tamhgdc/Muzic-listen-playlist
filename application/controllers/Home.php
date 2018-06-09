@@ -9,6 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller
 {
     const TPL_FOLDER = 'mp3/';
+    const CACHE_TTL = 86400;
     protected $grabber;
     /**
      * Home constructor.
@@ -58,10 +59,12 @@ class Home extends CI_Controller
         $list_playlist    = config_item('list_playlist');
         $location_id      = trim($location_id);
         $music_id         = trim($music_id);
-        if (!array_key_exists($location_id, $list_location)) {
+        if (!array_key_exists($location_id, $list_location))
+        {
             redirect();
         }
-        if (!array_key_exists($music_id, $list_playlist)) {
+        if (!array_key_exists($music_id, $list_playlist))
+        {
             redirect();
         }
         $uriString                   = 'den-' . $location_id . '-va-nghe-nhac-' . $music_id;
@@ -81,6 +84,30 @@ class Home extends CI_Controller
         $this->load->view(self::TPL_FOLDER . 'page_index', $data);
     }
     /**
+     * Sitemap
+     * @link /sitemap.xml
+     * @link /home/sitemap.html
+     */
+    public function sitemap()
+    {
+        $this->output->set_status_header(200)->set_content_type('application/xml', 'utf-8')->cache(self::CACHE_TTL);
+        $list_location = config_item('list_location');
+        $list_playlist = config_item('list_playlist');
+        $list_link     = '';
+        $list_link_key = '___';
+        foreach ($list_location as $location_id => $location_value)
+        {
+            foreach ($list_playlist as $music_id => $music_value)
+            {
+                $list_link .= site_url('den-' . ($location_id) . '-va-nghe-nhac-' . trim($music_id)) . $list_link_key;
+            }
+        }
+        $list_link         = trim($list_link, $list_link_key);
+        $data              = array();
+        $data['list_link'] = explode($list_link_key, $list_link);
+        $this->load->view(self::TPL_FOLDER . 'sitemap', $data);
+    }
+    /**
      * Clean Cache
      * @link /home/clean_cache.html
      */
@@ -92,22 +119,28 @@ class Home extends CI_Controller
         $username = $this->input->get_post('username', true);
         $password = $this->input->get_post('password', true);
         $type     = $this->input->get_post('type', true);
-        if ($username === null || $password === null) {
+        if ($username === null || $password === null)
+        {
             $response = array(
                 'result' => 2,
                 'desc' => 'Sai hoặc thiếu tham số'
             );
-        } elseif ($username != $auth['username'] || $password != $auth['password']) {
+        }
+        elseif ($username != $auth['username'] || $password != $auth['password'])
+        {
             $response = array(
                 'result' => 3,
                 'desc' => 'Sai chữ ký xác thực'
             );
-        } else {
+        }
+        else
+        {
             $this->load->driver('cache', array(
                 'adapter' => 'apc',
                 'backup' => 'file'
             ));
-            if ($type === 'info') {
+            if ($type === 'info')
+            {
                 $response = array(
                     'result' => 0,
                     'desc' => 'Lấy thông tin Cache',
@@ -115,7 +148,9 @@ class Home extends CI_Controller
                         'info' => $this->cache->cache_info()
                     )
                 );
-            } else {
+            }
+            else
+            {
                 $response = array(
                     'result' => 0,
                     'desc' => 'Xóa Cache',
