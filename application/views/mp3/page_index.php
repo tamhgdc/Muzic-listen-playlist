@@ -190,9 +190,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </ul>
                 </div>
                 <div class="jp-playlist">
-                    <ul>
-                        <li></li>
-                    </ul>
+                    <ul><li></li></ul>
                 </div>
                 <div class="jp-no-solution">
                     <span>Thông báo</span>Để nghe được nhạc, yêu cầu trình duyệt phải được kích hoạt Flash Player, download tại đây <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
@@ -208,7 +206,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </body>
 </html>
 <!--
-    - A production of HungNA <dev@nguyenanhung.com>
+    - A production of Hung Nguyen <dev@nguyenanhung.com>
     - Page generation time: {elapsed_time}
     - Memory usage: {memory_usage}
  -->
