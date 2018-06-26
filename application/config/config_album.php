@@ -1,0 +1,15 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+/**
+ * Created by PhpStorm.
+ * User: 713uk13m
+ * Date: 6/26/18
+ * Time: 14:39
+ */
+$config['album_list'] = array(
+    'den-vau' => array(
+        'type' => 'youtube',
+        'name' => 'Tuyển tập nhạc Đen 2018: 23 bài hát mới nhất của Đen Vâu - Lộn Xộn',
+        'id' => 'xzk1TESCGq0'
+    )
+);

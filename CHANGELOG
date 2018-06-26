@@ -32,3 +32,7 @@
 ## Version 1.0.5
 - [x] Thêm module Sitemap, List ra toàn bộ link nhạc available
 - [x] Thêm file robots.txt hỗ trợ cho SEO
+
+## Version 1.0.6
+- [x] Cập nhật phiên bản CodeIgniter version 3.1.9
+- [x] Bổ sung thêm module Album, show cả album nhạc để nghe. Nguồn Youtube
