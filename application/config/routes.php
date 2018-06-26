@@ -53,5 +53,6 @@ $route['index']                          = 'home/index';
 $route['musics']                         = 'home/index';
 $route['sitemap.xml']                    = 'home/sitemap';
 $route['den-(:any)-va-nghe-nhac-(:any)'] = 'home/playlist/$1/$2';
+$route['album/(:any)']                   = 'album/index/$1';
 $route['404_override']                   = '';
 $route['translate_uri_dashes']           = FALSE;
