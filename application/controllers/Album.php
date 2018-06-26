@@ -24,13 +24,13 @@ class Album extends CI_Controller
         $this->config->load('config_site');
         $this->config->load('config_album');
     }
+
     /**
      * Album nhạc
      * một module nhỏ, lưu trữ những album tôi yêu
      *
-     * @param string $slug
-     *
-     * @link /album/album-name.html
+     * @link  /album/album-name.html
+     * @param string $albumId
      */
     public function index($albumId = '')
     {
