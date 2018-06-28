@@ -11,5 +11,10 @@ $config['album_list'] = array(
         'type' => 'youtube',
         'name' => 'Tuyển tập nhạc Đen 2018: 23 bài hát mới nhất của Đen Vâu - Lộn Xộn',
         'id' => 'xzk1TESCGq0'
+    ),
+    'tra-tim-cho-anh-blackbi-ft-elbi' => array(
+        'type' => 'youtube',
+        'name' => 'Trả Tim Cho Anh - Blackbi x Elbi',
+        'id' => 'IVUudYBJCEM'
     )
 );
