@@ -9,6 +9,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url><loc><?php echo base_url(); ?></loc><changefreq>always</changefreq><priority>1.0</priority></url>
+    <?php foreach ($list_album as $album) { ?>
+        <url><loc><?php echo trim($album); ?></loc><changefreq>always</changefreq><priority>0.9</priority></url>
+    <?php } ?>
     <?php foreach ($list_link as $link) { ?>
         <url><loc><?php echo trim($link); ?></loc><changefreq>always</changefreq><priority>0.9</priority></url>
     <?php } ?>

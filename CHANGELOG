@@ -36,3 +36,7 @@
 ## Version 1.0.6
 - [x] Cập nhật phiên bản CodeIgniter version 3.1.9
 - [x] Bổ sung thêm module Album, show cả album nhạc để nghe. Nguồn Youtube
+
+## Version 1.0.7
+- [x] Bổ sung thêm 1 số MV. Nguồn Youtube
+- [x] Bổ sung link album vào Sitemap
