@@ -132,6 +132,14 @@ $config['list_location_id'] = array(
     'vung-dat-ghibli-huyen-thoai'
 );
 $config['list_playlist']    = array(
+    'danh-cho-nguoi-yeu-xa' => array(
+        'name' => 'Nhạc Dành Cho Người Yêu Xa',
+        'from_source' => 'zing_mp3',
+        'playlist' => array(
+            'kHJHyZHNdRLGJRhTGyFHZmTZpdGsHkpdk'
+        ),
+        'poster' => 'https://s22.postimg.cc/rqo8nnp81/Ca_u-no_i-hay-ve_-ti_nh-ye_u-xa-1.jpg'
+    ),
     // Hot Trending
     'top-100-nhac-viet' => array(
         'name' => 'Top 100 Việt',

@@ -26,6 +26,7 @@ class Home extends CI_Controller
         $this->config->load('config_site');
         $this->config->load('config_grabber');
         $this->config->load('config_player');
+        $this->config->load('config_album');
         $this->grabber = arrayToObject(config_item('config_grabber'));
     }
     /**
@@ -81,6 +82,10 @@ class Home extends CI_Controller
         $data['current_location_db'] = $list_location[$location_id];
         $data['current_location']    = $location_id;
         $data['current_playlist']    = $music_id;
+        if (isset($playlistData['poster']))
+        {
+            $data['image_src'] = $playlistData['poster'];
+        }
         $this->load->view(self::TPL_FOLDER . 'page_index', $data);
     }
     /**
@@ -91,8 +96,18 @@ class Home extends CI_Controller
     public function sitemap()
     {
         $this->output->set_status_header(200)->set_content_type('application/xml', 'utf-8')->cache(self::CACHE_TTL);
-        $list_location = config_item('list_location');
-        $list_playlist = config_item('list_playlist');
+        $list_location  = config_item('list_location');
+        $list_playlist  = config_item('list_playlist');
+        $album_list     = config_item('album_list');
+        // Album + MV
+        $list_album     = '';
+        $list_album_key = '___';
+        foreach ($album_list as $album_id => $album_value)
+        {
+            $list_album .= site_url('album/' . $album_id) . $list_album_key;
+        }
+        $list_album    = trim($list_album, $list_album_key);
+        // Link Playlist
         $list_link     = '';
         $list_link_key = '___';
         foreach ($list_location as $location_id => $location_value)
@@ -102,9 +117,11 @@ class Home extends CI_Controller
                 $list_link .= site_url('den-' . ($location_id) . '-va-nghe-nhac-' . trim($music_id)) . $list_link_key;
             }
         }
-        $list_link         = trim($list_link, $list_link_key);
-        $data              = array();
-        $data['list_link'] = explode($list_link_key, $list_link);
+        $list_link          = trim($list_link, $list_link_key);
+        // Push Data
+        $data               = array();
+        $data['list_link']  = explode($list_link_key, $list_link);
+        $data['list_album'] = explode($list_album_key, $list_album);
         $this->load->view(self::TPL_FOLDER . 'sitemap', $data);
     }
     /**

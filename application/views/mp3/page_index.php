@@ -24,7 +24,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta property="og:title" content="<?=$page_title;?> - <?=$sites->site_name;?>" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?php echo $canonical_url; ?>" />
-    <meta property="og:image" content="<?php echo assets_url('mp3/relax.jpg'); ?>" />
+    <meta property="og:image" content="<?php
+    if (isset($image_src))
+    {
+        echo $image_src;
+    }
+    else
+    {
+        echo assets_url('mp3/relax.jpg');
+    }
+    ?>" />
     <meta property="og:site_name" content="<?=$sites->site_name;?>" />
     <meta property="og:description" content="<?=$page_title;?> - <?=$sites->site_name;?>" />
     <link href="<?php echo $author->name; ?>" rel="author" />
