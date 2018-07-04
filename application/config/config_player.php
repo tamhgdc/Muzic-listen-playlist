@@ -137,7 +137,8 @@ $config['list_playlist']    = array(
         'from_source' => 'zing_mp3',
         'playlist' => array(
             'kHJHyZHNdRLGJRhTGyFHZmTZpdGsHkpdk'
-        )
+        ),
+        'poster' => 'https://s22.postimg.cc/rqo8nnp81/Ca_u-no_i-hay-ve_-ti_nh-ye_u-xa-1.jpg'
     ),
     // Hot Trending
     'top-100-nhac-viet' => array(

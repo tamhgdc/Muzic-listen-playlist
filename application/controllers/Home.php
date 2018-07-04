@@ -82,6 +82,10 @@ class Home extends CI_Controller
         $data['current_location_db'] = $list_location[$location_id];
         $data['current_location']    = $location_id;
         $data['current_playlist']    = $music_id;
+        if (isset($playlistData['poster']))
+        {
+            $data['image_src'] = $playlistData['poster'];
+        }
         $this->load->view(self::TPL_FOLDER . 'page_index', $data);
     }
     /**
