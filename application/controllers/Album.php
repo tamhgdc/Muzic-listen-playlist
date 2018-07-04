@@ -49,7 +49,7 @@ class Album extends CI_Controller
         $data['page_description'] = 'Album nhạc ' . $albumData['name'];
         $data['page_keywords']    = 'Album nhạc ' . $albumData['name'];
         $data['canonical_url']    = site_url('album/' . $albumId);
-        $data['image_src']        = 'https://i.ytimg.com/vi/' . $albumData['id'] . '/maxresdefault.jpg';
+        $data['image_src']        = 'https://i.ytimg.com/vi/' . $albumData['id'] . '/hqdefault.jpg';
         $this->load->view(self::TPL_FOLDER . 'album', $data);
     }
 }
