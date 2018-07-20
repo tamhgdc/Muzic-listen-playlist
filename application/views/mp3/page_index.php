@@ -211,7 +211,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="fanpage-like">
     <div class="fb-like" data-href="<?php echo $canonical_url; ?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 </div><!--/fanpage-like-->
-<script type="text/javascript" src="<?php echo assets_url('statics/js/index.js?version=1.0.2'); ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url('statics/js/index.js?version=1.0.3'); ?>"></script>
 </body>
 </html>
 <!--
