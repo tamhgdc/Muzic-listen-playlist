@@ -32,10 +32,10 @@ $config['site_data']     = array(
     'title' => 'Hung Nguyen',
     'description' => 'Quán Khuya MP3 - Nghe nhạc theo gu, ngắm nhìn cảnh đẹp',
     'keywords' => 'nghe nhạc, music, thư giãn, giải trí, nghe nhạc theo gu, ngắm nhìn cảnh đẹp',
-    'fb:app_id' => '214967728696915',
-    'fb:admins' => '100001376346062',
-    'fb_app_id' => '214967728696915',
-    'fb_admins' => '100001376346062'
+    'fb:app_id' => '677368889282431',
+    'fb:admins' => '100024368930792',
+    'fb_app_id' => '677368889282431',
+    'fb_admins' => '100024368930792'
 );
 $config['tracking_code'] = array(
     'google_analytics_id' => 'UA-68085190-1'

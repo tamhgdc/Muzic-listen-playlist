@@ -8,9 +8,9 @@ Tạo thành những link chia sẻ nhạc theo GU 1 cách dễ dàng và thuậ
 
 Nghe nhạc và ngắm cảnh đẹp :)
 
-Link Demo: [http://mp3.nguyenanhung.com](http://mp3.nguyenanhung.com)
+Link Demo: [https://mp3.nguyenanhung.com](https://mp3.nguyenanhung.com)
 
-Link Demo: [http://mp3.nguyenanhung.com/album/den-vau.html](http://mp3.nguyenanhung.com/album/den-vau.html)
+Link Demo: [https://mp3.nguyenanhung.com/album/den-vau.html](https://mp3.nguyenanhung.com/album/den-vau.html)
 
 Demo
 
@@ -23,6 +23,6 @@ Name: Hung Nguyen
 
 Email: dev@nguyenanhung.com
 
-Facebook: https://fb.com/nguyenanhung
+Facebook: https://fb.com/iam.hungng
 
-Msg: https://m.me/nguyenanhung
+Msg: https://m.me/iam.hungng
