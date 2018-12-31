@@ -14,8 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * list_images: Mảng chứa link ảnh ở host ngoài
  */
 $config['list_location']    = array(
-    'happy-new-year'              => array(
-        'name'             => 'Happy New Year',
+    'nam-moi-2019'                => array(
+        'name'             => 'Năm mới 2019',
         'self_host'        => TRUE,
         'self_host_folder' => 'assets/background/happy-new-year/',
         'list_images'      => array()
@@ -121,7 +121,7 @@ $config['list_location']    = array(
     )
 );
 $config['list_location_id'] = array(
-    'happy-new-year',
+    'nam-moi-2019',
     'thien-duong',
     'doi-nui',
     'song-suoi',
@@ -141,14 +141,18 @@ $config['list_location_id'] = array(
 $config['list_playlist']    = array(
     'nhac-tet'                             => array(
         'name'        => 'Nhạc Tết',
-        'from_source' => 'zing_mp3',
+        'from_source' => 'nhaccuatui',
         'playlist'    => array(
-            'LmcmyLGihdQmdvhTGtFmLHtZQACvhEmzW',
-            'kHcnyLkmhsZhzZJTnyDHLmTkQAXbaScRZ',
-            'LnJGtZZHCimbQzJynyFnZnyZWlXDsEpxh',
-            'knxmyRLxssZTGyFHknTkWlCbNEhnn',
-            'LHxnyLHuQaFRBXHtGTDmLnyZpAhvNupJL',
-            'kHxmTFbJsJBXyHtDmLmyLpzCFNRQNu'
+            '6b9c0d587707b504d4748ec6f4fc4ee3',
+            'cdf0dfaac13089739ca331837b94c81d',
+            '22c14d68b84bb0d62ddcb79435b83618',
+            '4b67deb22ec4c6352bbda59141a67d60',
+            'c331f031d9d32e8eac600052008c2f90',
+            '307217656d7221e3bd97da6631100a6f',
+            '4461054a8a854d6eedd097bf2fbe90b3',
+            'cc8821c3b01aedc7e6102a1e7e88af4a',
+            '358814241de793fc5d2c1ea2d7c70530',
+            '7f215be457d12603b18de8a27dbadb5b'
         ),
         'poster'      => 'https://i.postimg.cc/VLpP5VW5/18.jpg'
     ),
