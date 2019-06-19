@@ -1256,41 +1256,6 @@ $config['list_playlist']    = array(
             '3e7f2fc22b8219968ca4577d05c81b73'
         )
     ),
-    'bo-tu-hoan-hao-vol-1'                 => array(
-        'name'        => 'Bộ tứ Vol 1',
-        'from_source' => 'nhaccuatui',
-        'playlist'    => array(
-            "8edb5a43a86053e80dc6992da59aa8e0"
-        )
-    ),
-    'bo-tu-hoan-hao-vol-2'                 => array(
-        'name'        => 'Bộ tứ Vol 2',
-        'from_source' => 'nhaccuatui',
-        'playlist'    => array(
-            "1f1515d177532069bc69a1091b82330c"
-        )
-    ),
-    'bo-tu-hoan-hao-vol-3'                 => array(
-        'name'        => 'Bộ tứ Vol 3',
-        'from_source' => 'nhaccuatui',
-        'playlist'    => array(
-            "e09194a60c20f69c8c8fa4c4ba767320"
-        )
-    ),
-    'bo-tu-hoan-hao-vol-4'                 => array(
-        'name'        => 'Bộ tứ Vol 4',
-        'from_source' => 'nhaccuatui',
-        'playlist'    => array(
-            "fade33959977775818c195f1a0e530a4"
-        )
-    ),
-    'bo-tu-hoan-hao-vol-5'                 => array(
-        'name'        => 'Bộ tứ Vol 5',
-        'from_source' => 'nhaccuatui',
-        'playlist'    => array(
-            "3648d52dae3ed37633e5676fcbec2437"
-        )
-    ),
     'cafe-dang-va-mua'                     => array(
         'name'        => 'Cafe đắng và mưa',
         'from_source' => 'nhaccuatui',
@@ -1313,39 +1278,6 @@ $config['list_playlist']    = array(
         'from_source' => 'nhaccuatui',
         'playlist'    => array(
             '2273a4acca184a4062bc3acef1f0b2d3'
-        )
-    ),
-    'hai-ngoai'                            => array(
-        'name'        => 'Hải ngoại',
-        'from_source' => 'nhaccuatui',
-        'playlist'    => array(
-            "260c437bcd7af6ff0461a99c7dc9a89c",
-            "260c437bcd7af6ff0461a99c7dc9a89c",
-            "3131f3a9da4116c81cdf9362d0ff50e9",
-            "af08d959c1b10a5eee1187779ea3197e",
-            "1260f593446aa56a064558f5d576cae1",
-            "90bd1ae34bd554d59c668e9ac79de773",
-            "b79e10b3cc02c73d798c5b819129857a",
-            "ba2331358ce2eead9fbd6c64e5865882",
-            "c2a20e1a3a7d848d5c17aeeff1359a23",
-            "85e5cf65bb63cf087c56268288acb35f",
-            "2359f4870ea862a9887b3613e95aec3c",
-            "8234b9a83429c0fd9245f8c780b27558",
-            "55ecf4d994725d4152d423af4a52a173",
-            "53aad397e7fede083f3693911a8b25c7",
-            "6883b2b0d590dd811f6d25cb69713a28",
-            "093a42de830b7e0225e9f8e0651381fa",
-            "537b802a98e05fccbe12635bbbd610bd",
-            "7d8a93e5a0c725729e080ab79ab84887",
-            "b39b5b27de14227bac5a3dcb16c5103f",
-            "bf33612e9107f2f716a489228d1ffa79"
-        )
-    ),
-    'world-cup'                            => array(
-        'name'        => 'World Cup',
-        'from_source' => 'nhaccuatui',
-        'playlist'    => array(
-            '6835b87debcd84777c11921fa9559976'
         )
     ),
     'qua-tang-sinh-nhat'                   => array(
