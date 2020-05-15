@@ -1,27 +1,33 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 /**
- * Created by PhpStorm.
- * User: 713uk13m
- * Date: 6/2/18
- * Time: 02:10
+ * Class Home
+ *
+ * @author    713uk13m <dev@nguyenanhung.com>
+ * @copyright 713uk13m <dev@nguyenanhung.com>
+ *
+ * @property object config
+ * @property object output
+ * @property object input
+ * @property object cache
  */
 class Home extends CI_Controller
 {
     const TPL_FOLDER = 'mp3/';
-    const CACHE_TTL = 86400;
+    const CACHE_TTL  = 86400;
     protected $grabber;
+
     /**
      * Home constructor.
+     *
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
      */
     public function __construct()
     {
         parent::__construct();
-        $this->load->helper(array(
-            'url',
-            'string',
-            'array'
-        ));
+        $this->load->helper(array('url', 'string', 'array'));
         $this->load->library('grab_link');
         $this->config->load('config_site');
         $this->config->load('config_grabber');
@@ -29,10 +35,16 @@ class Home extends CI_Controller
         $this->config->load('config_album');
         $this->grabber = arrayToObject(config_item('config_grabber'));
     }
+
     /**
-     * Homepage
-     * @link /home/index.html
-     * @link /musics.html
+     * Function index
+     *
+     * @link     /home/index.html
+     * @link     /musics.html
+     *
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 05/15/2020 25:04
      */
     public function index()
     {
@@ -47,11 +59,18 @@ class Home extends CI_Controller
         $data['canonical_url']    = base_url();
         $this->load->view(self::TPL_FOLDER . 'page_index', $data);
     }
+
     /**
      * Playlist Music
+     *
+     * @link     /den-location_id-va-nghe-nhac-music_id.html
+     *
      * @param string $location_id
      * @param string $music_id
-     * @link  /den-location_id-va-nghe-nhac-music_id.html
+     *
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 05/15/2020 25:13
      */
     public function playlist($location_id = '', $music_id = '')
     {
@@ -60,12 +79,10 @@ class Home extends CI_Controller
         $list_playlist    = config_item('list_playlist');
         $location_id      = trim($location_id);
         $music_id         = trim($music_id);
-        if (!array_key_exists($location_id, $list_location))
-        {
+        if (!array_key_exists($location_id, $list_location)) {
             redirect();
         }
-        if (!array_key_exists($music_id, $list_playlist))
-        {
+        if (!array_key_exists($music_id, $list_playlist)) {
             redirect();
         }
         $uriString                   = 'den-' . $location_id . '-va-nghe-nhac-' . $music_id;
@@ -82,97 +99,97 @@ class Home extends CI_Controller
         $data['current_location_db'] = $list_location[$location_id];
         $data['current_location']    = $location_id;
         $data['current_playlist']    = $music_id;
-        if (isset($playlistData['poster']))
-        {
+        if (isset($playlistData['poster'])) {
             $data['image_src'] = $playlistData['poster'];
         }
         $this->load->view(self::TPL_FOLDER . 'page_index', $data);
     }
+
     /**
-     * Sitemap
-     * @link /sitemap.xml
-     * @link /home/sitemap.html
+     * Function Sitemap
+     *
+     * @link     /sitemap.xml
+     * @link     /home/sitemap.html
+     *
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 05/15/2020 25:32
      */
     public function sitemap()
     {
         $this->output->set_status_header(200)->set_content_type('application/xml', 'utf-8')->cache(self::CACHE_TTL);
-        $list_location  = config_item('list_location');
-        $list_playlist  = config_item('list_playlist');
-        $album_list     = config_item('album_list');
+        $list_location = config_item('list_location');
+        $list_playlist = config_item('list_playlist');
+        $album_list    = config_item('album_list');
         // Album + MV
         $list_album     = '';
         $list_album_key = '___';
-        foreach ($album_list as $album_id => $album_value)
-        {
+        foreach ($album_list as $album_id => $album_value) {
             $list_album .= site_url('album/' . $album_id) . $list_album_key;
         }
-        $list_album    = trim($list_album, $list_album_key);
+        $list_album = trim($list_album, $list_album_key);
         // Link Playlist
         $list_link     = '';
         $list_link_key = '___';
-        foreach ($list_location as $location_id => $location_value)
-        {
-            foreach ($list_playlist as $music_id => $music_value)
-            {
+        foreach ($list_location as $location_id => $location_value) {
+            foreach ($list_playlist as $music_id => $music_value) {
                 $list_link .= site_url('den-' . ($location_id) . '-va-nghe-nhac-' . trim($music_id)) . $list_link_key;
             }
         }
-        $list_link          = trim($list_link, $list_link_key);
+        $list_link = trim($list_link, $list_link_key);
         // Push Data
         $data               = array();
         $data['list_link']  = explode($list_link_key, $list_link);
         $data['list_album'] = explode($list_album_key, $list_album);
         $this->load->view(self::TPL_FOLDER . 'sitemap', $data);
     }
+
     /**
-     * Clean Cache
-     * @link /home/clean_cache.html
+     * Function Clean Cache
+     *
+     * @link     /home/clean_cache.html
+     *
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 05/15/2020 25:41
      */
     public function clean_cache()
     {
         $this->config->load('admin_config');
-        $auth     = config_item('authentication');
+        $auth = config_item('authentication');
         // API
-        $username = $this->input->get_post('username', true);
-        $password = $this->input->get_post('password', true);
-        $type     = $this->input->get_post('type', true);
-        if ($username === null || $password === null)
-        {
+        $username = $this->input->get_post('username', TRUE);
+        $password = $this->input->get_post('password', TRUE);
+        $type     = $this->input->get_post('type', TRUE);
+        if ($username === NULL || $password === NULL) {
             $response = array(
                 'result' => 2,
-                'desc' => 'Sai hoặc thiếu tham số'
+                'desc'   => 'Sai hoặc thiếu tham số'
             );
-        }
-        elseif ($username != $auth['username'] || $password != $auth['password'])
-        {
+        } elseif ($username != $auth['username'] || $password != $auth['password']) {
             $response = array(
                 'result' => 3,
-                'desc' => 'Sai chữ ký xác thực'
+                'desc'   => 'Sai chữ ký xác thực'
             );
-        }
-        else
-        {
+        } else {
             $this->load->driver('cache', array(
                 'adapter' => 'apc',
-                'backup' => 'file'
+                'backup'  => 'file'
             ));
-            if ($type === 'info')
-            {
+            if ($type === 'info') {
                 $response = array(
-                    'result' => 0,
-                    'desc' => 'Lấy thông tin Cache',
+                    'result'  => 0,
+                    'desc'    => 'Lấy thông tin Cache',
                     'details' => array(
                         'info' => $this->cache->cache_info()
                     )
                 );
-            }
-            else
-            {
+            } else {
                 $response = array(
-                    'result' => 0,
-                    'desc' => 'Xóa Cache',
+                    'result'  => 0,
+                    'desc'    => 'Xóa Cache',
                     'details' => array(
-                        'info' => $this->cache->cache_info(),
+                        'info'  => $this->cache->cache_info(),
                         'clean' => $this->cache->clean()
                     )
                 );

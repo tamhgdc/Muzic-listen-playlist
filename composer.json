@@ -12,6 +12,10 @@
     ],
     "require": {
         "monolog/monolog": "^1.23",
-        "curl/curl": "^1.9"
+        "curl/curl": "^1.9",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "ext-libxml": "*"
     }
 }
