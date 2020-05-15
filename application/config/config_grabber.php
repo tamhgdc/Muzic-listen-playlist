@@ -11,6 +11,6 @@ $config['config_grabber'] = [
         'playlist_url' => 'https://www.nhaccuatui.com/flash/xml?html5=true&key2='
     ],
     'zing_mp3' => [
-        'playlist_url' => 'https://m.mp3.zing.vn/xhr/media/get-source?type=album&key='
+        'playlist_url' => 'https://m.zingmp3.vn/xhr/media/get-source?type=album&key='
     ]
 ];

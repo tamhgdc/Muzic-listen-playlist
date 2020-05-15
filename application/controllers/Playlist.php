@@ -17,8 +17,8 @@ class Playlist extends CI_Controller
 {
     const TPL_FOLDER    = 'mp3/';
     const CACHE_ADAPTER = array('adapter' => 'apc', 'backup' => 'file');
-    const CACHE_TTL     = 86400; // Cache 24 hours
-    const CACHE_PREFIX  = 'PLAYLIST_DATA_MP3_GRABBER_2020_'; // Prefix Cache
+    const CACHE_TTL     = 1800; // Cache 24 hours
+    const CACHE_PREFIX  = 'PLAYLIST_DATA_MP3_GRABBER_2020_05_'; // Prefix Cache
     protected $grabber;
 
     /**
