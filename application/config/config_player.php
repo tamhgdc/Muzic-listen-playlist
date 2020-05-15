@@ -281,6 +281,20 @@ $config['list_playlist']    = array(
             "1f54c868c8c38a4cf74029a9341ed1a8"
         )
     ),
+    'phan-manh-quynh'                      => array(
+        'name'        => 'Phan Mạnh Quỳnh',
+        'from_source' => 'nhaccuatui',
+        'playlist'    => array(
+            "b2535300e5c488b3400c7b6e8c16f879",
+            "152ef2e79b577f8e0a2cbe15167e8c98",
+            "1a495abd98a86dd9a3b042731ce08018",
+            "070576633b1d4de311995b11aface176",
+            "4cd6a1ce68c25875edec3b2b11979af9",
+            "c4a6c96449794a361ee65a47359af2e6",
+            "bd99ae33b67753e5f9285adaf1db3c77",
+            "a46d77c7a3daf1fa6003a413dc827a97"
+        )
+    ),
     'chau-khai-phong'                      => array(
         'name'        => 'Châu Khải Phong',
         'from_source' => 'nhaccuatui',
