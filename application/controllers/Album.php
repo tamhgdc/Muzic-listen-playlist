@@ -1,42 +1,52 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 /**
- * Created by PhpStorm.
- * User: 713uk13m
- * Date: 6/26/18
- * Time: 14:37
+ * Class Album
+ *
+ * @author    713uk13m <dev@nguyenanhung.com>
+ * @copyright 713uk13m <dev@nguyenanhung.com>
+ *
+ * @property object config
+ * @property object output
+ * @property object input
+ * @property object cache
  */
 class Album extends CI_Controller
 {
     const TPL_FOLDER = 'album/';
+
     /**
      * Album constructor.
+     *
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
      */
     public function __construct()
     {
         parent::__construct();
-        $this->load->helper(array(
-            'url',
-            'string',
-            'array'
-        ));
+        $this->load->helper(array('url', 'string', 'array'));
         $this->load->library('grab_link');
         $this->config->load('config_site');
         $this->config->load('config_album');
     }
+
     /**
-     * Album nhạc
-     * một module nhỏ, lưu trữ những album tôi yêu
+     * Album nhạc - một module nhỏ, lưu trữ những album tôi yêu
      *
-     * @link  /album/album-name.html
+     * @link     /album/album-name.html
+     *
      * @param string $albumId
+     *
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 05/15/2020 23:35
      */
     public function index($albumId = '')
     {
         $albumId   = trim($albumId);
         $albumList = config_item('album_list');
-        if (!array_key_exists($albumId, $albumList))
-        {
+        if (!array_key_exists($albumId, $albumList)) {
             redirect();
         }
         $albumData                = $albumList[$albumId];
