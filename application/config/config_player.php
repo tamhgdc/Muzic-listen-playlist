@@ -158,9 +158,9 @@ $config['list_playlist']    = array(
     ),
     'danh-cho-nguoi-yeu-xa'                => array(
         'name'        => 'Yêu Xa',
-        'from_source' => 'zing_mp3',
+        'from_source' => 'nhaccuatui',
         'playlist'    => array(
-            'kHJHyZHNdRLGJRhTGyFHZmTZpdGsHkpdk'
+            '7b1b4a9687faea9432e130fe8d124bef'
         ),
         'poster'      => 'https://s22.postimg.cc/rqo8nnp81/Ca_u-no_i-hay-ve_-ti_nh-ye_u-xa-1.jpg'
     ),
@@ -398,13 +398,19 @@ $config['list_playlist']    = array(
     ),
     'den-vau'                              => array(
         'name'        => 'Đen Vâu',
-        'from_source' => 'zing_mp3',
+        'from_source' => 'nhaccuatui',
         'playlist'    => array(
-            'LncmTLmuLQXzgzZymTFGZmtZQFJbLDLJH',
-            'kHxHyZmNdivLFWByHybHLmtkWFJDLsSzC',
-            'ZHJHtLmEWaNaHunymybmZHTLWvcFZvLsN',
-            'kncGTLmxJEhCHQmyGyFmLmyLWDJFkBcQE',
-            'LmxmTZmEkphmSkJyGyFHkHtLpbcbkmmVb'
+            '8e3b17787b3acd0ba5d789fb3578bd04',
+            'b932343ae879deba3946031329aa5015',
+            '34ea4168f9d12444b900dcba336f49bd',
+            'cd3c9c087d4e5d15269d0c9e49b976d3',
+            '13f05f4b2218556ef1ce9ab2b9f155a9',
+            '84db8b8f09883e7c1b71556ea3adf555',
+            'c1a58953f6e8ada5c73c9da33363d5ed',
+            '1f151ad321a3c1e3018b45c03e55a7a9',
+            'e3d0fd744a80c76dbed3c09374acdcf8',
+            '6518c3f8c12aca81d72a804a49c1228c',
+            'f2307e2e0c4ccabda5ddfe29391e24b9',
         )
     ),
     'vu'                                   => array(

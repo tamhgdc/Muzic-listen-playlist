@@ -41,7 +41,7 @@ class Grab_link
     public function nhaccuatui($url = '')
     {
         try {
-            $getContents = $this->sendRequest(trim($url));
+            $getContents = file_get_contents(trim($url));
             $xmlContents = @simplexml_load_string($getContents, 'SimpleXMLElement', LIBXML_NOCDATA);
             $str_output  = '';
             if (isset($xmlContents->track)) {
