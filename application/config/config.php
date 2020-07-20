@@ -25,8 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 if (ENVIRONMENT === 'production')
 {
-    $config['base_url']  = 'http://mp3.nguyenanhung.com/';
-    $config['asset_url'] = 'http://mp3.nguyenanhung.com/';
+    $config['base_url']  = 'https://mp3.nguyenanhung.com/';
+    $config['asset_url'] = 'https://mp3.nguyenanhung.com/';
 }
 else
 {
