@@ -1080,7 +1080,8 @@ $config['list_playlist']    = array(
         'playlist'    => array(
             "0c5ec925a74563852882ea4d70413ad0",
             "601d3a7d2bb1fb1467f2ab709de6874b"
-        )
+        ),
+        'poster' => 'https://i.ibb.co/N6zXJcR/nhac-thien.jpg'
     ),
     'hoa-tau'                              => array(
         'name'        => 'Hòa tấu',
