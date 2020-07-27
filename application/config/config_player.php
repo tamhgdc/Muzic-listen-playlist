@@ -1079,7 +1079,12 @@ $config['list_playlist']    = array(
         'from_source' => 'nhaccuatui',
         'playlist'    => array(
             "0c5ec925a74563852882ea4d70413ad0",
-            "601d3a7d2bb1fb1467f2ab709de6874b"
+            "601d3a7d2bb1fb1467f2ab709de6874b",
+            "6e34f18e7e62dbe64e76a3897593961d",
+            "b7e67351058d231454062662de6b2e7c",
+            "c20973fafeba2b1640ccda6e0f7d83d7",
+            "7ccab250ac8f44b35b8cd272aa1d4875",
+            "7fd14bb26b46868d0c87963f70791ae4"
         ),
         'poster' => 'https://i.ibb.co/N6zXJcR/nhac-thien.jpg'
     ),
