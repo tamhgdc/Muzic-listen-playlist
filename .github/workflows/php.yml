@@ -1,12 +1,12 @@
 # GitHub Action for CodeIgniter
-name: Testing CodeIgniter
+name: Testing GitHub Action for CodeIgniter
 on: [push, pull_request]
 jobs:
   build:
     strategy:
       matrix:
         operating-system: [ubuntu-latest]
-        php-versions: ['7.2', '7.3', '7.4']
+        php-versions: ['5.5','5.6','7.1','7.2', '7.3', '7.4']
     runs-on: ${{ matrix.operating-system }}
     steps:
       - name: Checkout
