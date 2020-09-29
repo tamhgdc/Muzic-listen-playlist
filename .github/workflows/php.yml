@@ -46,5 +46,5 @@ jobs:
                 run: ifconfig
             -   name: Get IP Connect
                 run: curl --location --request GET 'https://nguyenanhung.com/utils/ip_address'
-            #-   name: Rsync to Server
-            #    run: rsync -azPq -e "ssh -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/home/hungna/test_github_actions"
+            -   name: Rsync to Server
+                run: rsync -azPq -e "ssh -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/home/${{ secrets.SERVER_USERNAME }}/test_github_actions"
