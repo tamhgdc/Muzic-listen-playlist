@@ -36,6 +36,8 @@ jobs:
                 run: rsync --version
             -   name: Add SSH Key
                 run: eval `ssh-agent -s` && mkdir -p ~/.ssh && echo "${{ secrets.SSH_PRIVATE_KEY }}" | ssh-add - > ~/.ssh/id_rsa && chmod 700 ~/.ssh && chmod 600 ~/.ssh/* && cat ~/.ssh/id_rsa
+            -   name: Test
+                run: echo ${{ secrets.SSH_PRIVATE_KEY }}
             -   name: Test SSH Connection
                 run: ssh -vvv -o StrictHostKeyChecking=no -T -p 2222 "${{ secrets.SSH_DEPLOY_PATH }}"
             -   name: Rsync to Server
