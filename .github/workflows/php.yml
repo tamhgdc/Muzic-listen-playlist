@@ -38,9 +38,9 @@ jobs:
                 uses: appleboy/ssh-action@master
                 with:
                     host: ${{ secrets.SERVER_IP }}
-                        username: ${{ secrets.SERVER_USERNAME }}
-                        key: ${{ secrets.KEY_SSH }}
-                        port: ${{ secrets.SERVER_PORT }}
-                        script: whoami
+                    username: ${{ secrets.SERVER_USERNAME }}
+                    key: ${{ secrets.KEY_SSH }}
+                    port: ${{ secrets.SERVER_PORT }}
+                    script: whoami
             -   name: Rsync to Server
                 run: rsync -azPq -e "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "hungna@SERVER_IP:/home/hungna/test_github_actions"
