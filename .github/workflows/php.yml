@@ -39,7 +39,7 @@ jobs:
             -   name: SSH Agent
                 run: eval $(ssh-agent -s)
             -   name: Add SSH Key
-                run: ssh-add <(echo "${{ secrets.KEY_SSH }}") > /dev/null 2>&1
+                run: echo "${{ secrets.KEY_SSH }}" | ssh-add - > ~/.ssh/id_rsa
             -   name: CHMOD SSH Key
                 run: mkdir -p ~/.ssh && chmod 700 ~/.ssh
             -   name: Whoami
@@ -48,5 +48,7 @@ jobs:
                 run: ifconfig
             -   name: Get IP Connect
                 run: curl --location --request GET 'https://nguyenanhung.com/utils/ip_address'
+            -   name: Test SSH
+                run: ssh -o StrictHostKeyChecking=no -T -p "${{ secrets.SERVER_PORT }}" -i ~/.ssh/id_rsa "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}"
             -   name: Rsync to Server
-                run: rsync -azPq -e "ssh -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/home/${{ secrets.SERVER_USERNAME }}/test_github_actions"
+                run: rsync -azPq -e "ssh -p ${{ secrets.SERVER_PORT }} -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/home/${{ secrets.SERVER_USERNAME }}/test_github_actions"
