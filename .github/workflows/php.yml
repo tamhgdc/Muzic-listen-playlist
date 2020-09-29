@@ -34,14 +34,16 @@ jobs:
                 run: sudo apt install rsync grsync
             -   name: Test Rsync
                 run: rsync --version
-            -   name: Deploy Code to Server
-                uses: appleboy/ssh-action@master
-                with:
-                    host: ${{ secrets.SERVER_IP }}
-                    username: ${{ secrets.SERVER_USERNAME }}
-                    key: ${{ secrets.KEY_SSH }}
-                    port: ${{ secrets.SERVER_PORT }}
-                    script: whoami
+            -   name: Test Open SSH
+                run: 'which ssh-agent || ( apt update -y && apt install openssh-client -y )'
+            -   name: SSH Agent
+                run: eval $(ssh-agent -s)
+            -   name: Add SSH Key
+                run: ssh-add <(echo "${{ secrets.SERVER_USERNAME }}") > /dev/null 2>&1
+            -   name: CHMOD SSH Key
+                run: mkdir -p ~/.ssh && chmod 700 ~/.ssh
+            -   name: Whoami
+                run: whoami
             -   name: Ifconfig
                 run: ifconfig
             -   name: Get IP Connect
