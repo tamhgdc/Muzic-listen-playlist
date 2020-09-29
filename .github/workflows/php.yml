@@ -39,4 +39,4 @@ jobs:
             -   name: Test SSH Connection
                 run: ssh -o StrictHostKeyChecking=no -T -p 2222 "${{ secrets.SSH_DEPLOY_PATH }}"
             -   name: Rsync to Server
-                run: rsync -rvzhe "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --rsync-path="sudo rsync" -og --chown="hungna:hungna" application/ "${{ secrets.SSH_DEPLOY_PATH }}:test_github_actions"
+                run: rsync -rvzhe "ssh -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --rsync-path="sudo rsync" -og --chown="hungna:hungna" ./ "${{ secrets.SSH_DEPLOY_PATH }}:test_github_actions"
