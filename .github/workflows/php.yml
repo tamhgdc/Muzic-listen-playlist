@@ -34,21 +34,3 @@ jobs:
                 run: sudo apt install rsync grsync
             -   name: Test Rsync
                 run: rsync --version
-            -   name: Test Open SSH
-                run: 'which ssh-agent || ( apt update -y && apt install openssh-client -y )'
-            -   name: SSH Agent
-                run: eval $(ssh-agent -s)
-            -   name: CHMOD SSH Key
-                run: mkdir -p ~/.ssh && chmod 700 ~/.ssh
-            -   name: Add SSH Key
-                run: echo "${{ secrets.KEY_SSH }}" > ~/.ssh/id_rsa
-            -   name: Whoami
-                run: whoami
-            -   name: Ifconfig
-                run: ifconfig
-            -   name: Get IP Connect
-                run: curl --location --request GET 'https://nguyenanhung.com/utils/ip_address'
-            -   name: Test SSH
-                run: ssh -p "${{ secrets.SERVER_PORT }}" "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}"
-            #-   name: Rsync to Server
-            #    run: rsync -azPq -e "ssh -p ${{ secrets.SERVER_PORT }} -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/home/${{ secrets.SERVER_USERNAME }}/test_github_actions"
