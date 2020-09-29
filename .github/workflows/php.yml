@@ -42,5 +42,7 @@ jobs:
                     key: ${{ secrets.KEY_SSH }}
                     port: ${{ secrets.SERVER_PORT }}
                     script: whoami
-            -   name: Rsync to Server
-                run: rsync -azPq -e "ssh -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/home/hungna/test_github_actions"
+            -   name: Ifconfig
+                run: ifconfig
+            #-   name: Rsync to Server
+            #    run: rsync -azPq -e "ssh -p ${{ secrets.SERVER_PORT }} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/home/hungna/test_github_actions"
