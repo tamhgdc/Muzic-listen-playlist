@@ -38,10 +38,10 @@ jobs:
                 run: 'which ssh-agent || ( apt update -y && apt install openssh-client -y )'
             -   name: SSH Agent
                 run: eval $(ssh-agent -s)
-            -   name: Add SSH Key
-                run: echo "${{ secrets.KEY_SSH }}" | ssh-add - > ~/.ssh/id_rsa
             -   name: CHMOD SSH Key
                 run: mkdir -p ~/.ssh && chmod 700 ~/.ssh
+            -   name: Add SSH Key
+                run: echo "${{ secrets.KEY_SSH }}" > ~/.ssh/id_rsa
             -   name: Whoami
                 run: whoami
             -   name: Ifconfig
