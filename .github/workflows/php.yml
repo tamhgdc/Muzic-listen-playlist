@@ -39,7 +39,7 @@ jobs:
             -   name: SSH Agent
                 run: eval $(ssh-agent -s)
             -   name: Add SSH Key
-                run: ssh-add <(echo "${{ secrets.SERVER_USERNAME }}") > /dev/null 2>&1
+                run: ssh-add <(echo "${{ secrets.KEY_SSH }}") > /dev/null 2>&1
             -   name: CHMOD SSH Key
                 run: mkdir -p ~/.ssh && chmod 700 ~/.ssh
             -   name: Whoami
