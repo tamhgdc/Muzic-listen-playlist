@@ -49,6 +49,6 @@ jobs:
             -   name: Get IP Connect
                 run: curl --location --request GET 'https://nguyenanhung.com/utils/ip_address'
             -   name: Test SSH
-                run: ssh -i ~/.ssh/id_rsa -p "${{ secrets.SERVER_PORT }}" "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}"
+                run: ssh -p "${{ secrets.SERVER_PORT }}" "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}"
             #-   name: Rsync to Server
             #    run: rsync -azPq -e "ssh -p ${{ secrets.SERVER_PORT }} -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ "${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_IP }}:/home/${{ secrets.SERVER_USERNAME }}/test_github_actions"
