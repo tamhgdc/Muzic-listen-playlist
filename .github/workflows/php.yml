@@ -30,7 +30,3 @@ jobs:
                     restore-keys: ${{ runner.os }}-composer-
             -   name: Install dependencies
                 run: composer install --no-dev --no-progress --prefer-dist --optimize-autoloader
-            -   name: Rsync Install
-                run: sudo apt install rsync grsync
-            -   name: Test Rsync
-                run: rsync --version
