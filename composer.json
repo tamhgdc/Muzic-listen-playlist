@@ -2,20 +2,34 @@
     "description": "Project Listen to Music Playlist",
     "name": "nguyenanhung/listen-to-music-playlist",
     "type": "project",
-    "license": "GPL-3.0",
-    "homepage": "https://mp3.nguyenanhung.com",
+    "license": "MIT",
+    "homepage": "https://github.com/nguyenanhung/listen-to-music-playlist",
     "authors": [
         {
             "name": "Nguyen An Hung",
-            "email": "dev@nguyenanhung.com"
+            "email": "dev@nguyenanhung.com",
+            "homepage": "https://nguyenanhung.com",
+            "role": "Developer"
         }
     ],
     "require": {
-        "monolog/monolog": "^1.23",
-        "curl/curl": "^1.9",
+        "php": "^7.0 || ^8.0",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-simplexml": "*",
-        "ext-libxml": "*"
-    }
+        "ext-libxml": "*",
+        "nguyenanhung/codeigniter-framework": "^3.1.13",
+        "nguyenanhung/telegram-messenger": "^2.0",
+        "bear8421/gravatar": "^1.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "tramtro/make-some-noise": "^1.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "prefer-stable": true
 }
