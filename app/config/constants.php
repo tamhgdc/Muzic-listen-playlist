@@ -85,11 +85,11 @@ defined('EXIT__AUTO_MIN') or define('EXIT__AUTO_MIN', 9); // lowest automaticall
 defined('EXIT__AUTO_MAX') or define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 // Custom Constants
-defined('MY_TELEGRAM_ID') or define('MY_TELEGRAM_ID', '474860058');
+defined('MY_TELEGRAM_ID') or define('MY_TELEGRAM_ID', 'xxx');
 defined('TELEGRAM_JARVIS_BOT') or define('TELEGRAM_JARVIS_BOT', [
     'telegram_messages' => [
-        'bot_name'        => 'hungng_bot',
-        'bot_api_key'     => '943000516:AAGdXurRtJDJsL-HCBQYn-mZOwFOmy2Gx3I',
+        'bot_name'        => 'xxx',
+        'bot_api_key'     => 'xxx',
         'default_chat_id' => MY_TELEGRAM_ID
     ]
 ]);
